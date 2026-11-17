@@ -75,6 +75,7 @@ jobs:
           ANDROID_KEYALIAS_PASS: ${{ secrets.ANDROID_KEYALIAS_PASS }}
         with:
           cliVersion: v0.1.76
+          versioning: None
           targetPlatform: Android
           androidExportType: ${{ inputs.build_app_bundle == 'true' && 'androidAppBundle' || 'androidPackage' }}
           androidTargetSdkVersion: 34
