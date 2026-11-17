@@ -43,6 +43,26 @@ public static class BuildKlassx
             // lack ASTC); keeps textures from coming out broken in the emulator.
             EditorUserBuildSettings.androidBuildSubtarget = MobileTextureSubtarget.ETC2;
 
+            // Release signing with our own keystore (decoded by CI from the
+            // ANDROID_KEYSTORE_BASE64 secret into the project root).
+            string keystorePath = Environment.GetEnvironmentVariable("ANDROID_KEYSTORE_PATH");
+            string keystorePass = Environment.GetEnvironmentVariable("ANDROID_KEYSTORE_PASS");
+            string keyaliasName = Environment.GetEnvironmentVariable("ANDROID_KEYALIAS_NAME");
+            string keyaliasPass = Environment.GetEnvironmentVariable("ANDROID_KEYALIAS_PASS");
+            if (!string.IsNullOrEmpty(keystorePath) && System.IO.File.Exists(keystorePath))
+            {
+                PlayerSettings.Android.useCustomKeystore = true;
+                PlayerSettings.Android.keystoreName = keystorePath;
+                PlayerSettings.Android.keystorePass = keystorePass;
+                PlayerSettings.Android.keyaliasName = keyaliasName;
+                PlayerSettings.Android.keyaliasPass = keyaliasPass;
+                Debug.Log("[KlassxBuild] custom keystore signing enabled");
+            }
+            else
+            {
+                Debug.Log("[KlassxBuild] no custom keystore found, using debug key");
+            }
+
             string[] scenes = EditorBuildSettings.scenes
                 .Where(s => s.enabled && !string.IsNullOrEmpty(s.path))
                 .Select(s => s.path)
