@@ -1,0 +1,2105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e342af3cca74468d93f0a9c07371ef3, type: 3}
+  m_Name: NPC_2_Yesul_1
+  m_EditorClassIdentifier:
+  basic:
+  - statementId: 1
+    basicConversation:
+    - id: 0
+      conversation: This Terminal controls the access to the Art Center Building.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Confirm Activation
+        actionType: 1
+        actionData: 2
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+      - id: 2
+        answer: Test the Terminal
+        actionType: 4
+        actionData: 3
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 72
+        questStep: 6
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 2
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 72
+          questStep: 6
+      - id: 3
+        answer: Test the Terminal
+        actionType: 4
+        actionData: 3
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 73
+        questStep: 6
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 2
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 73
+          questStep: 6
+      - id: 1
+        answer: Force Field Optimization
+        actionType: 4
+        actionData: 4
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 72
+        questStep: 8
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 2
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 72
+          questStep: 8
+      - id: 5
+        answer: Force Field Optimization
+        actionType: 4
+        actionData: 4
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 73
+        questStep: 8
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 73
+          questStep: 8
+      - id: 6
+        answer: Test the Terminal
+        actionType: 4
+        actionData: 3
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 74
+        questStep: 6
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 2
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 74
+          questStep: 6
+      - id: 7
+        answer: Test the Terminal
+        actionType: 4
+        actionData: 3
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 75
+        questStep: 6
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 75
+          questStep: 6
+      - id: 8
+        answer: Force Field Optimization
+        actionType: 0
+        actionData: 4
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 74
+        questStep: 8
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 74
+          questStep: 8
+      - id: 9
+        answer: Force Field Optimization
+        actionType: 4
+        actionData: 4
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 75
+        questStep: 8
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 2
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 75
+          questStep: 8
+      - id: 10
+        answer: Art Center Purification
+        actionType: 3
+        actionData: 5
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 86
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 2
+          level:
+            level: 12
+            condition: 4
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+      - id: 11
+        answer: Confirm Purification
+        actionType: 4
+        actionData: 7
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 86
+        questStep: 1
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 2
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 86
+          questStep: 1
+      - id: 12
+        answer: Art Center 2nd Purification
+        actionType: 3
+        actionData: 6
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 90
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 13
+            condition: 4
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests:
+          - questId: 86
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+      - id: 13
+        answer: Confirm Purification
+        actionType: 4
+        actionData: 7
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 90
+        questStep: 1
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 2
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 90
+          questStep: 1
+  - statementId: 2
+    basicConversation:
+    - id: 0
+      conversation: The terminal is operating normally.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Return
+        actionType: 1
+        actionData: 1
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 3
+    basicConversation:
+    - id: 0
+      conversation: The Terminal's Force Field function is operating properly. You must gather 13 Spiritual Spheres in order to optimize the Force Field function of this Terminal.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Return
+        actionType: 1
+        actionData: 1
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 4
+    basicConversation:
+    - id: 0
+      conversation: Force Field Optimization is completed! Please proceed to the next Terminal and complete the required optimization to learn the Force Field Effects.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Return
+        actionType: 1
+        actionData: 1
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 5
+    basicConversation:
+    - id: 0
+      conversation: There are evil spirits moving around inside the Art Center. The mobs who are possessed by these evil spirits bring undesirable effects to the environment. Please do your best to eliminate them.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Next page
+        actionType: 1
+        actionData: 12
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 6
+    basicConversation:
+    - id: 0
+      conversation: There are evil spirits moving around inside the Art Center. The mobs who are possessed by these evil spirits bring undesirable effects to the environment. Please do your best to eliminate them.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Next page
+        actionType: 1
+        actionData: 14
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 7
+    basicConversation:
+    - id: 0
+      conversation: The required amount for purification has been achieved. Thank you for your tremendous efforts.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Return
+        actionType: 1
+        actionData: 1
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 8
+    basicConversation:
+    - id: 0
+      conversation: ...
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 0
+          swordsmanMale: 0
+          archerMale: 0
+          shamanMale: 0
+          brawlerFemale: 0
+          swordsmanFemale: 0
+          archerFemale: 0
+          shamanFemale: 0
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer: []
+  - statementId: 9
+    basicConversation:
+    - id: 0
+      conversation: The primary target in this area are the Street Junkies. Please eliminate 22 Street Junkie targets.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Return
+        actionType: 1
+        actionData: 1
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 10
+    basicConversation:
+    - id: 0
+      conversation: .....
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 0
+          swordsmanMale: 0
+          archerMale: 0
+          shamanMale: 0
+          brawlerFemale: 0
+          swordsmanFemale: 0
+          archerFemale: 0
+          shamanFemale: 0
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer: []
+  - statementId: 11
+    basicConversation:
+    - id: 0
+      conversation: The next target are the Sluggers. Please eliminate 24 Slugger targets.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Return
+        actionType: 1
+        actionData: 1
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0

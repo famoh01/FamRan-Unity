@@ -1,0 +1,1489 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e342af3cca74468d93f0a9c07371ef3, type: 3}
+  m_Name: NPC_S_Police_1
+  m_EditorClassIdentifier:
+  basic:
+  - statementId: 1
+    basicConversation:
+    - id: 1
+      conversation: This tunnel has been listed as a dangerous area. From my view, the left road goes through the tunnel, although there's also an exit to the right road that possess the same danger.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Ask about the dangerous Tunnel
+        actionType: 1
+        actionData: 2
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+      - id: 2
+        answer: Ask how to pass through
+        actionType: 1
+        actionData: 3
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests:
+          - questId: 302
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+      - id: 3
+        answer: Pass through the Tunnel
+        actionType: 1
+        actionData: 4
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 302
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 66
+            condition: 4
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+      - id: 4
+        answer: Exchange for Police Emblem
+        actionType: 1
+        actionData: 10
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem:
+          - item:
+              mainId: 1
+              subId: 22
+            itemNum: 30
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+      - id: 5
+        answer: Ask about Young Girl
+        actionType: 4
+        actionData: 11
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 732
+        questStep: 1
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 2
+    basicConversation:
+    - id: 2
+      conversation: Because the Crazy Dogs are blocking the tunnel, they will attack anything that passes by. Eliminating them will be hard due to the gas pipe near the tunnel making it dangerous to anyone who decides to enter. Sorry for this bad news!
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Return
+        actionType: 1
+        actionData: 1
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 3
+    basicConversation:
+    - id: 3
+      conversation: 'Investigation shows that there''s not only Crazy Dog in the tunnel, but also several person who lost their mind. And a giant German Shepherd leading them. '
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Next page
+        actionType: 1
+        actionData: 6
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 4
+    basicConversation:
+    - id: 4
+      conversation: Of course we can't allow a normal resident to go through. Only students from Sacred Gate School are allowed to enter.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Next page
+        actionType: 1
+        actionData: 9
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 5
+    basicConversation:
+    - id: 5
+      conversation: ....3
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer: []
+  - statementId: 6
+    basicConversation:
+    - id: 6
+      conversation: If my analysis of zoology is correct, certainly the German Shepherd had done something to control the other dogs.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Next page
+        actionType: 1
+        actionData: 7
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 7
+    basicConversation:
+    - id: 7
+      conversation: He was recognized as their master. I guess we need to do the same to pass through the tunnel.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Return
+        actionType: 1
+        actionData: 7
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 8
+    basicConversation:
+    - id: 8
+      conversation: ......4
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer: []
+  - statementId: 9
+    basicConversation:
+    - id: 1
+      conversation: Take extra caution venturing inside. The mobs present in that place intends only to kill.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Return
+        actionType: 1
+        actionData: 1
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 10
+    basicConversation:
+    - id: 10
+      conversation: Let me replace your 30 Police Emblem pieces with this newly repaired Police Emblem.
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Exchange for Police Emblem
+        actionType: 2
+        actionData: 0
+        function: 5
+        tradeItem:
+          reqItem1:
+            mainId: 1
+            subId: 22
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 1
+            subId: 24
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem:
+          - item:
+              mainId: 1
+              subId: 22
+            itemNum: 30
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0
+  - statementId: 11
+    basicConversation:
+    - id: 10
+      conversation: 'Are you talking about the Young Girl? I still remember she go Trading Hole with two guy. And the girl is very pretty. Since you are Sacred Financial Group Student, you can go there easily. '
+      condition:
+        isEnable: 1
+        classRequiremnet:
+          brawlerMale: 1
+          swordsmanMale: 1
+          archerMale: 1
+          shamanMale: 1
+          brawlerFemale: 1
+          swordsmanFemale: 1
+          archerFemale: 1
+          shamanFemale: 1
+        school: 0
+        level:
+          level: 0
+          condition: 0
+        elemental:
+          elemental: 0
+          condition: 0
+        brightPoints:
+          brightPoints: 0
+          condition: 0
+        time:
+          useTime: 0
+          startEnd:
+            start: 0
+            end: 0
+        minimumMoney: 0
+        minimumPartyMembers: 0
+        requiredItem: []
+        requiredSkill: []
+        mustNotLearnedSkills: []
+        requiredCompletedQuests: []
+        mustNotRunningQuests: []
+        requiredBuff: []
+        pQuestId: 65535
+        questStep: 0
+      answer:
+      - id: 1
+        answer: Return
+        actionType: 1
+        actionData: 1
+        function: 0
+        tradeItem:
+          reqItem1:
+            mainId: 65535
+            subId: 65535
+          reqItem2:
+            mainId: 65535
+            subId: 65535
+          reqItem3:
+            mainId: 65535
+            subId: 65535
+          reqItem4:
+            mainId: 65535
+            subId: 65535
+          reqItem5:
+            mainId: 65535
+            subId: 65535
+          resItem1:
+            mainId: 65535
+            subId: 65535
+          resItem2:
+            mainId: 65535
+            subId: 65535
+          resItem3:
+            mainId: 65535
+            subId: 65535
+          resItem4:
+            mainId: 65535
+            subId: 65535
+          resItem5:
+            mainId: 65535
+            subId: 65535
+        randomTalk:
+          talk:
+          randomTime: 0
+        sQuestID: 0
+        pQuestId: 65535
+        questStep: 0
+        talkCondition:
+          isEnable: 1
+          classRequiremnet:
+            brawlerMale: 1
+            swordsmanMale: 1
+            archerMale: 1
+            shamanMale: 1
+            brawlerFemale: 1
+            swordsmanFemale: 1
+            archerFemale: 1
+            shamanFemale: 1
+          school: 0
+          level:
+            level: 0
+            condition: 0
+          elemental:
+            elemental: 0
+            condition: 0
+          brightPoints:
+            brightPoints: 0
+            condition: 0
+          time:
+            useTime: 0
+            startEnd:
+              start: 0
+              end: 0
+          minimumMoney: 0
+          minimumPartyMembers: 0
+          requiredItem: []
+          requiredSkill: []
+          mustNotLearnedSkills: []
+          requiredCompletedQuests: []
+          mustNotRunningQuests: []
+          requiredBuff: []
+          pQuestId: 65535
+          questStep: 0

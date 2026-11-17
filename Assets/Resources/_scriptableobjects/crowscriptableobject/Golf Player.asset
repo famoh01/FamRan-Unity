@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a50891d634c7151f3c924d385af49d5, type: 3}
+  m_Name: Golf Player
+  m_EditorClassIdentifier:
+  data:
+    mainId: 36
+    subId: 11
+  Name: Golf Player
+  IconSource: {fileID: 21300000, guid: ac57b5b7948d9fa46aa8b30dccaf600c, type: 2}
+  crowTribe: 1
+  crowType: 2
+  crowBright: 2
+  petType: 0
+  summonType: 0
+  npcType: 0
+  overlapAttack: 0
+  shortReactionTarget: 1
+  cdCertify: 0
+  invisible: 0
+  detectInvisible: 0
+  obstacle: 0
+  holdPosition: 0
+  holdDirection: 0
+  genNotice: 0
+  bossMob: 0
+  busStation: 0
+  ignoreShock: 0
+  hideName: 0
+  noticeRespawn: 0
+  noticeRespawn2: 0
+  noticeDefeat: 0
+  noticeDefeat2: 0
+  hp: 9810
+  mp: 40
+  sp: 97
+  hpRecovery: 0.3
+  mpRecovery: 0.3
+  spRecovery: 0.5
+  level: 107
+  defense: 97
+  avoidRate: 25
+  hitRate: 18
+  viewRange: 100
+  genTime: 0
+  bonusExp: 1101
+  bonusCp: 27
+  skinFile: {fileID: 11400000, guid: 24678952f48131446ae90c08289d4c84, type: 2}
+  talkFilePath:
+  crowSale: []
+  shopFileName:
+  npcShop: {fileID: 0}
+  exchangeFileName:
+  npcItemExchange: {fileID: 0}
+  bodyRadius: 4
+  walkSpeed: 11
+  run: 1
+  runSpeed: 28
+  autoDropout: 0
+  dropoutTime: 0
+  afterDeathNobody: 0
+  genItemFileName: skatingboybundles.genitem
+  qGenItemFileName: q_Lv104.genitem
+  moneyValue: 496
+  moneyRate: 30
+  moneyLuckRate: 8
+  moneyLuckMaxNum: 1
+  crowAttack:
+  - isUse: 1
+    rangeType: 1
+    attackRange: 80
+    damage:
+      _min: 193
+      _max: 250
+    delay: 3
+    spUsage: 1
+    _animationInfo:
+      mainType: 0
+      subType: 0
+      animationName: Attack01
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 6400
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 200d0000
+    skillId:
+      mainId: 65535
+      subId: 65535
+    skillTarget: 0
+  - isUse: 1
+    rangeType: 0
+    attackRange: 4
+    damage:
+      _min: 180
+      _max: 240
+    delay: 1.6
+    spUsage: 1
+    _animationInfo:
+      mainType: 0
+      subType: 0
+      animationName: Attack02
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 8800
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 6009000000140000
+    skillId:
+      mainId: 65535
+      subId: 65535
+    skillTarget: 0
+  crowPattern:
+  - dnRate: 90
+    actPattern: 7
+    attackSet: 10
+  skill:
+    mainId: 65535
+    subId: 65535
+  skillLevel: 0
+  skillTarget: 0
+  resistance:
+    Electric: 0
+    Fire: 0
+    Ice: 0
+    Poison: 0
+    Wind: 0
+  reviveGate: -1
+  nameplateHeightOffset: 0

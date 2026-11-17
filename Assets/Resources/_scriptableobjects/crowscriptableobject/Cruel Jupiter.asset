@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a50891d634c7151f3c924d385af49d5, type: 3}
+  m_Name: Cruel Jupiter
+  m_EditorClassIdentifier:
+  data:
+    mainId: 57
+    subId: 5
+  Name: Cruel Jupiter
+  IconSource: {fileID: 21300000, guid: ac57b5b7948d9fa46aa8b30dccaf600c, type: 2}
+  crowTribe: 0
+  crowType: 2
+  crowBright: 1
+  petType: 0
+  summonType: 0
+  npcType: 0
+  overlapAttack: 0
+  shortReactionTarget: 1
+  cdCertify: 0
+  invisible: 0
+  detectInvisible: 0
+  obstacle: 0
+  holdPosition: 0
+  holdDirection: 0
+  genNotice: 1
+  bossMob: 1
+  busStation: 0
+  ignoreShock: 1
+  hideName: 0
+  noticeRespawn: 0
+  noticeRespawn2: 0
+  noticeDefeat: 0
+  noticeDefeat2: 0
+  hp: 60000
+  mp: 10000
+  sp: 10000
+  hpRecovery: 40
+  mpRecovery: 10
+  spRecovery: 10
+  level: 200
+  defense: 300
+  avoidRate: 60
+  hitRate: 80
+  viewRange: 80
+  genTime: 0
+  bonusExp: 15000
+  bonusCp: 0
+  skinFile: {fileID: 11400000, guid: c43a24259829c3745959ce845062dc0f, type: 2}
+  talkFilePath:
+  crowSale: []
+  shopFileName:
+  npcShop: {fileID: 0}
+  exchangeFileName:
+  npcItemExchange: {fileID: 0}
+  bodyRadius: 8
+  walkSpeed: 18
+  run: 1
+  runSpeed: 42
+  autoDropout: 0
+  dropoutTime: 0
+  afterDeathNobody: 0
+  genItemFileName: boss.genitem
+  qGenItemFileName:
+  moneyValue: 65535
+  moneyRate: 100
+  moneyLuckRate: 8
+  moneyLuckMaxNum: 1
+  crowAttack:
+  - isUse: 1
+    rangeType: 0
+    attackRange: 30
+    damage:
+      _min: 600
+      _max: 800
+    delay: 0.5
+    spUsage: 0
+    _animationInfo:
+      mainType: 4
+      subType: 0
+      animationName: Attack01
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 9760
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 801b0000
+    skillId:
+      mainId: 16
+      subId: 14
+    skillTarget: 1
+  - isUse: 1
+    rangeType: 0
+    attackRange: 10
+    damage:
+      _min: 1200
+      _max: 1800
+    delay: 2
+    spUsage: 0
+    _animationInfo:
+      mainType: 4
+      subType: 0
+      animationName: Attack02
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 9760
+      animUnitTime: 160
+      animDivNum: 2
+      animDivFrame: 80070000a0140000
+    skillId:
+      mainId: 16
+      subId: 16
+    skillTarget: 1
+  - isUse: 1
+    rangeType: 1
+    attackRange: 60
+    damage:
+      _min: 500
+      _max: 700
+    delay: 3
+    spUsage: 0
+    _animationInfo:
+      mainType: 4
+      subType: 0
+      animationName: Attack03
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 11360
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 401a0000
+    skillId:
+      mainId: 16
+      subId: 15
+    skillTarget: 0
+  crowPattern:
+  - dnRate: 90
+    actPattern: 1
+    attackSet: 10
+  skill:
+    mainId: 4
+    subId: 5
+  skillLevel: 0
+  skillTarget: 1
+  resistance:
+    Electric: 100
+    Fire: 100
+    Ice: 100
+    Poison: 100
+    Wind: 100
+  reviveGate: -1
+  nameplateHeightOffset: 0

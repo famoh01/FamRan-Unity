@@ -1,0 +1,396 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507134321ba6604dc6c2156f757585c4, type: 3}
+  m_Name: 00288_2
+  m_EditorClassIdentifier:
+  data:
+    questId: 320
+    isComplete: 0
+    success: 0
+    stepIndex: 0
+    killCount: 0
+    stepFlags: 0
+  questArea: 0
+  questTitle: The Lessons of the Sword Agent
+  questDescription: Please follow the instructions given by the Agent. These lessons serve as training, so please learn them seriously. Press "details" button for more information.
+  isRepeatable: 0
+  isCanRetry: 0
+  isCanGiveUp: 0
+  isParty: 0
+  isPartyQuest: 0
+  isOnlyProgress: 0
+  practiceCondition:
+    timeLimit: 0
+    partyMemberNum: 0
+    isFailureWhenDead: 0
+  preCondition:
+    money: 0
+    partyMemberNum: 0
+  autoStartCondition:
+    brawlerM: 1
+    swordsmanM: 1
+    archerM: 1
+    shamanM: 1
+    brawlerF: 1
+    swordsmanF: 1
+    archerF: 1
+    shamanF: 1
+    requiredLevel: 65535
+    school: 0
+    item:
+      mainId: 65535
+      subId: 65535
+    skill:
+      mainId: 65535
+      subId: 65535
+    map:
+      map:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      radius: 0
+  reward:
+    experienceReward: 25000
+    goldReward: 0
+    skillPointsReward: 0
+    statsPointsReward: 0
+    brightPointsReward: 0
+    lifePointsReward: 0
+    pkReward: 0
+    questReward: -1
+    rewardItem: []
+    rewardSkill: []
+  questProgress:
+    useProgress: 0
+    failType:
+      timeOver: 0
+      die: 0
+      leave: 0
+    progressStart:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressEnd:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressFail:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+  questStep:
+  - title: Collecting GPS
+    description: Please collect the GPS from the Skating Boy or Skating Master.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description: Collect the GPS
+      mobs:
+      - item:
+          mainId: 106
+          subId: 36
+        genNumber: 1
+        genPercent: 20
+        genItem:
+        - mainId: 36
+          subId: 3
+        - mainId: 36
+          subId: 5
+  - title: Searching for the Petrol Station
+    description: Please move to the GPS location of 71,105 and confirm the location of the Petrol Station at the Trading Hole.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description: Find the Location of the Petrol Station
+      map:
+        mainId: 16
+        subId: 0
+      position: {x: 71, y: 105}
+      radius: 2
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Searching for the Tunnel No.2
+    description: The GPS shows the location of 60,117 at the Trading Hole, move to it and confirm the location of the Tunnel No. 2.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description: Find the Location of the Tunnel No.2
+      map:
+        mainId: 16
+        subId: 0
+      position: {x: 60, y: 117}
+      radius: 2
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Searching for the Combination Sports Center
+    description: The GPS shows the location of 96,143 at the Trading Hole, move to it and confirm the location of the Combination Sports Center.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description: Find the Location of the Combination Sports Center
+      map:
+        mainId: 16
+        subId: 0
+      position: {x: 96, y: 143}
+      radius: 2
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Searching for the Buried Items
+    description: The GPS shows the location of 116,170 at the Trading Hole, move to it and find the buried Items around the area.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description: Find the Buried Items
+      map:
+        mainId: 16
+        subId: 0
+      position: {x: 116, y: 170}
+      radius: 2
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest:
+    - item:
+        mainId: 106
+        subId: 37
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 1
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Delivering the Space and Time Capsule
+    description: If you follow the instructions and found the Space and Time Capsule, then you can go back to the Agent and give it to him.
+    talkToNpc:
+      description: Talk to the Sword Agent
+      crow:
+        mainId: 37
+        subId: 3
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest:
+    - item:
+        mainId: 106
+        subId: 37
+    - item:
+        mainId: 106
+        subId: 36
+    mobGenerateQuestItem:
+      description:
+      mobs: []

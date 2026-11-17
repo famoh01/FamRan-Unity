@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507134321ba6604dc6c2156f757585c4, type: 3}
+  m_Name: 00360
+  m_EditorClassIdentifier:
+  data:
+    questId: 361
+    isComplete: 0
+    success: 0
+    stepIndex: 0
+    killCount: 0
+    stepFlags: 0
+  questArea: 0
+  questTitle: Finding the Truck's Key
+  questDescription: The Truck broke down suddenly when the Truck Driver was trying to fix it. A giant dog known as the Loose Halogen took the key of the truck. Please find it and return it to the Truck Driver. Press the "Details" button for more information.
+  isRepeatable: 0
+  isCanRetry: 0
+  isCanGiveUp: 0
+  isParty: 0
+  isPartyQuest: 0
+  isOnlyProgress: 0
+  practiceCondition:
+    timeLimit: 0
+    partyMemberNum: 0
+    isFailureWhenDead: 0
+  preCondition:
+    money: 0
+    partyMemberNum: 0
+  autoStartCondition:
+    brawlerM: 1
+    swordsmanM: 1
+    archerM: 1
+    shamanM: 1
+    brawlerF: 1
+    swordsmanF: 1
+    archerF: 1
+    shamanF: 1
+    requiredLevel: 65535
+    school: 0
+    item:
+      mainId: 65535
+      subId: 65535
+    skill:
+      mainId: 65535
+      subId: 65535
+    map:
+      map:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      radius: 0
+  reward:
+    experienceReward: 13000
+    goldReward: 0
+    skillPointsReward: 0
+    statsPointsReward: 0
+    brightPointsReward: 0
+    lifePointsReward: 0
+    pkReward: 0
+    questReward: -1
+    rewardItem: []
+    rewardSkill: []
+  questProgress:
+    useProgress: 0
+    failType:
+      timeOver: 0
+      die: 0
+      leave: 0
+    progressStart:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressEnd:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressFail:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+  questStep:
+  - title: Finding the Missing Key
+    description: The Loose Halogen took away the key of the Truck. Get the key back from the Loose Halogen, and give it back to the Truck Driver.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description: Get back the Key of the Truck
+      mobs:
+      - item:
+          mainId: 107
+          subId: 5
+        genNumber: 1
+        genPercent: 60
+        genItem:
+        - mainId: 36
+          subId: 6
+  - title: Return the Truck's Key
+    description: If you succeed in finding the missing Truck Key, please give it back to the Truck Driver.
+    talkToNpc:
+      description: Talk to the Truck Driver (WharfPassage)
+      crow:
+        mainId: 39
+        subId: 4
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest:
+    - item:
+        mainId: 107
+        subId: 5
+    mobGenerateQuestItem:
+      description:
+      mobs: []

@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507134321ba6604dc6c2156f757585c4, type: 3}
+  m_Name: 00087
+  m_EditorClassIdentifier:
+  data:
+    questId: 94
+    isComplete: 0
+    success: 0
+    stepIndex: 0
+    killCount: 0
+    stepFlags: 0
+  questArea: 0
+  questTitle: Purifying the Sports Field
+  questDescription: By this time, most places have bad spirits moving around it. These spirits might possess the people and objects in the area. Please purify these spirits before it does something bad.
+  isRepeatable: 0
+  isCanRetry: 0
+  isCanGiveUp: 0
+  isParty: 0
+  isPartyQuest: 0
+  isOnlyProgress: 0
+  practiceCondition:
+    timeLimit: 0
+    partyMemberNum: 0
+    isFailureWhenDead: 0
+  preCondition:
+    money: 0
+    partyMemberNum: 0
+  autoStartCondition:
+    brawlerM: 1
+    swordsmanM: 1
+    archerM: 1
+    shamanM: 1
+    brawlerF: 1
+    swordsmanF: 1
+    archerF: 1
+    shamanF: 1
+    requiredLevel: 21
+    school: 2
+    item:
+      mainId: 65535
+      subId: 65535
+    skill:
+      mainId: 65535
+      subId: 65535
+    map:
+      map:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      radius: 0
+  reward:
+    experienceReward: 3600
+    goldReward: 0
+    skillPointsReward: 0
+    statsPointsReward: 0
+    brightPointsReward: 0
+    lifePointsReward: 0
+    pkReward: 0
+    questReward: -1
+    rewardItem:
+    - item:
+        mainId: 32
+        subId: 8
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 1
+    rewardSkill: []
+  questProgress:
+    useProgress: 0
+    failType:
+      timeOver: 0
+      die: 0
+      leave: 0
+    progressStart:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressEnd:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressFail:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+  questStep:
+  - title: Eliminating the Jr. Bruisers
+    description: By this time, most places have bad spirits moving around it. These spirits might possess the people and objects in the area. Look for Jr. Bruisers within the area and purify these spirits before it does something bad.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    killMob:
+      description: Eliminate 29 Jr. Bruisers
+      id:
+        mainId: 10
+        subId: 0
+      numberOfMobs: 29
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Confirm Purification
+    description: Once you have taken care of these Jr. Bruisers, please proceed and activate the Terminal.
+    talkToNpc:
+      description: Activate the Library Terminal
+      crow:
+        mainId: 32
+        subId: 16
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []

@@ -1,0 +1,318 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b9f1a5c1980f38d357b38734505346, type: 3}
+  m_Name: class00
+  m_EditorClassIdentifier:
+  tribe: 0
+  emClass: 1
+  school: 0
+  hair: 0
+  face: 0
+  bright: 1
+  level: 1
+  guild: 0
+  money: 0
+  statsPoint: 3
+  skillPoint: 1
+  CharConstant:
+    _walkVelocity: 14
+    _runVelocity: 37
+    _HP_Str: 1.8
+    _MP_Spi: 0.65
+    _SP_Sta: 1.2
+    _hit_Dex: 0
+    _avoid_Dex: 0
+    _defense_Dex: 0.1
+    _PA_Pow: 0.14
+    _PA_Dex: 0.1
+    _SA_Pow: 0.08
+    _SA_Dex: 0.18
+    _MA_Dex: 0.12
+    _MA_Spi: 0.22
+    _MA_Int: 0
+    _conv_AP: 0.4
+    _conv_DP: 0.75
+    _conv_PA: 0.8
+    _conv_SA: 0.2
+    _Begin_AP: 4
+    _Begin_DP: 5
+    _Begin_PA: 5
+    _Begin_SA: 3
+    _LevelUp_AP: 1.2
+    _LevelUp_DP: 0.1
+    _LevelUp_PA: 0.4
+    _LevelUp_SA: 0.18
+    _Begin_Stats:
+      Pow: 10
+      Str: 34
+      Spi: 9
+      Dex: 10
+      Int: 0
+      Sta: 9
+    _LevelUp_Stats:
+      Pow: 0.3
+      Str: 4.4
+      Spi: 0.61
+      Dex: 0.4
+      Int: 0
+      Sta: 3.2
+    Animations:
+    - mainType: 4
+      subType: 0
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4160
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: c0080000
+    - mainType: 4
+      subType: 0
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 3200
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 00050000
+    - mainType: 4
+      subType: 0
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4320
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 80070000
+    - mainType: 4
+      subType: 10
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4160
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 60090000
+    - mainType: 4
+      subType: 10
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4000
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 20080000
+    - mainType: 4
+      subType: 10
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4160
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: c0080000
+    - mainType: 4
+      subType: 15
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 3200
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: e0060000
+    - mainType: 4
+      subType: 15
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 3200
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 00050000
+    - mainType: 4
+      subType: 15
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 3200
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 20030000
+    - mainType: 4
+      subType: 4
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4160
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 60090000
+    - mainType: 4
+      subType: 4
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4000
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 20080000
+    - mainType: 4
+      subType: 4
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4160
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 20080000
+    - mainType: 5
+      subType: 0
+      animationName: Shock
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 1920
+      animUnitTime: 160
+      animDivNum: 0
+      animDivFrame:
+  experience:
+    _min: 0
+    _max: 318
+  hp:
+    _min: 145
+    _max: 145
+  mp:
+    _min: 4
+    _max: 4
+  sp:
+    _min: 18
+    _max: 18
+  pk: 0
+  startMapId:
+    mainId: 2
+    subId: 0
+  startGate: 6
+  startPos: {x: 0, y: 0, z: 0}
+  item:
+  - mainId: 4
+    subId: 4
+  quest: 00000000
+  putOnItems:
+  - position: 1
+    item:
+      mainId: 50
+      subId: 1
+    quantity: 0
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  - position: 2
+    item:
+      mainId: 53
+      subId: 1
+    quantity: 0
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  - position: 3
+    item:
+      mainId: 65535
+      subId: 65535
+    quantity: 0
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  - position: 4
+    item:
+      mainId: 56
+      subId: 2
+    quantity: 0
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  - position: 5
+    item:
+      mainId: 23
+      subId: 1
+    quantity: 0
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  inventory:
+  - item:
+      mainId: 4
+      subId: 4
+    quantity: 10
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  - item:
+      mainId: 130
+      subId: 2
+    quantity: 1
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  - item:
+      mainId: 115
+      subId: 46
+    quantity: 1
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0

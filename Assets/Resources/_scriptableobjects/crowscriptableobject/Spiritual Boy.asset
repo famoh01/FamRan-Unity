@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a50891d634c7151f3c924d385af49d5, type: 3}
+  m_Name: Spiritual Boy
+  m_EditorClassIdentifier:
+  data:
+    mainId: 13
+    subId: 9
+  Name: Spiritual Boy
+  IconSource: {fileID: 21300000, guid: ac57b5b7948d9fa46aa8b30dccaf600c, type: 2}
+  crowTribe: 1
+  crowType: 2
+  crowBright: 2
+  petType: 0
+  summonType: 0
+  npcType: 0
+  overlapAttack: 0
+  shortReactionTarget: 1
+  cdCertify: 0
+  invisible: 0
+  detectInvisible: 0
+  obstacle: 0
+  holdPosition: 0
+  holdDirection: 0
+  genNotice: 0
+  bossMob: 0
+  busStation: 0
+  ignoreShock: 0
+  hideName: 0
+  noticeRespawn: 0
+  noticeRespawn2: 0
+  noticeDefeat: 0
+  noticeDefeat2: 0
+  hp: 9200
+  mp: 40
+  sp: 20
+  hpRecovery: 0.3
+  mpRecovery: 0.3
+  spRecovery: 0.5
+  level: 90
+  defense: 70
+  avoidRate: 24
+  hitRate: 13
+  viewRange: 60
+  genTime: 0
+  bonusExp: 808
+  bonusCp: 23
+  skinFile: {fileID: 11400000, guid: e6aa00abbe16f74448c7646aa69a04f0, type: 2}
+  talkFilePath:
+  crowSale: []
+  shopFileName:
+  npcShop: {fileID: 0}
+  exchangeFileName:
+  npcItemExchange: {fileID: 0}
+  bodyRadius: 4
+  walkSpeed: 9
+  run: 1
+  runSpeed: 28
+  autoDropout: 0
+  dropoutTime: 0
+  afterDeathNobody: 0
+  genItemFileName: lv90.genitem
+  qGenItemFileName: q_Lv77.genitem
+  moneyValue: 420
+  moneyRate: 30
+  moneyLuckRate: 8
+  moneyLuckMaxNum: 1
+  crowAttack:
+  - isUse: 1
+    rangeType: 1
+    attackRange: 6
+    damage:
+      _min: 170
+      _max: 218
+    delay: 0.3
+    spUsage: 1
+    _animationInfo:
+      mainType: 0
+      subType: 0
+      animationName: Attack01
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 7360
+      animUnitTime: 160
+      animDivNum: 2
+      animDivFrame: e010000060130000
+    skillId:
+      mainId: 65535
+      subId: 65535
+    skillTarget: 0
+  - isUse: 1
+    rangeType: 0
+    attackRange: 4
+    damage:
+      _min: 170
+      _max: 218
+    delay: 0.4
+    spUsage: 1
+    _animationInfo:
+      mainType: 0
+      subType: 0
+      animationName: Attack02
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 8160
+      animUnitTime: 160
+      animDivNum: 2
+      animDivFrame: 800c000060180000
+    skillId:
+      mainId: 65535
+      subId: 65535
+    skillTarget: 0
+  crowPattern:
+  - dnRate: 90
+    actPattern: 6
+    attackSet: 10
+  skill:
+    mainId: 65535
+    subId: 65535
+  skillLevel: 0
+  skillTarget: 0
+  resistance:
+    Electric: 15
+    Fire: 0
+    Ice: 15
+    Poison: 15
+    Wind: 10
+  reviveGate: -1
+  nameplateHeightOffset: 0

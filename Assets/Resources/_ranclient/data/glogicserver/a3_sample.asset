@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b207998ff8f4a101648da317f653e3, type: 3}
+  m_Name: a3_sample
+  m_EditorClassIdentifier:
+  rate: 100
+  setNumber: 3
+  newOption:
+  - rate: 50
+    randomType: 2
+    quantity: 3
+    newOptionSection:
+    - rate: 50
+      minValue: -4
+      maxValue: 4
+    - rate: 30
+      minValue: 4
+      maxValue: 9
+    - rate: 20
+      minValue: 10
+      maxValue: 20
+  - rate: 50
+    randomType: 4
+    quantity: 2
+    newOptionSection:
+    - rate: 45
+      minValue: 0.01
+      maxValue: 1
+    - rate: 5
+      minValue: 1.01
+      maxValue: 2
+  - rate: 50
+    randomType: 8
+    quantity: 3
+    newOptionSection:
+    - rate: 50
+      minValue: 0.001
+      maxValue: 0.002
+    - rate: 25
+      minValue: 0.004
+      maxValue: 0.005
+    - rate: 10
+      minValue: 0.005
+      maxValue: 0.009

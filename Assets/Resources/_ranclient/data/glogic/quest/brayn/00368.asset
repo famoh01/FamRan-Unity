@@ -1,0 +1,425 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507134321ba6604dc6c2156f757585c4, type: 3}
+  m_Name: 00368
+  m_EditorClassIdentifier:
+  data:
+    questId: 368
+    isComplete: 0
+    success: 0
+    stepIndex: 0
+    killCount: 0
+    stepFlags: 0
+  questArea: 0
+  questTitle: The Videotape Recovery
+  questDescription: Acquiring the videotape was a success; however, the tape is in a bad condition and can't be used for investigation. Please bring it to the Image Expert at the Trading Hole Videotape Shop for recovery. Press the "Details" button for more information.
+  isRepeatable: 0
+  isCanRetry: 0
+  isCanGiveUp: 0
+  isParty: 0
+  isPartyQuest: 0
+  isOnlyProgress: 0
+  practiceCondition:
+    timeLimit: 0
+    partyMemberNum: 0
+    isFailureWhenDead: 0
+  preCondition:
+    money: 0
+    partyMemberNum: 0
+  autoStartCondition:
+    brawlerM: 1
+    swordsmanM: 1
+    archerM: 1
+    shamanM: 1
+    brawlerF: 1
+    swordsmanF: 1
+    archerF: 1
+    shamanF: 1
+    requiredLevel: 65535
+    school: 0
+    item:
+      mainId: 65535
+      subId: 65535
+    skill:
+      mainId: 65535
+      subId: 65535
+    map:
+      map:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      radius: 0
+  reward:
+    experienceReward: 65000
+    goldReward: 0
+    skillPointsReward: 3
+    statsPointsReward: 0
+    brightPointsReward: 0
+    lifePointsReward: 0
+    pkReward: 0
+    questReward: -1
+    rewardItem: []
+    rewardSkill: []
+  questProgress:
+    useProgress: 0
+    failType:
+      timeOver: 0
+      die: 0
+      leave: 0
+    progressStart:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressEnd:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressFail:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+  questStep:
+  - title: Finding the Image Expert
+    description: Proceed to the Image Expert located at the Trading Hole and ask him to recover the videotape so that we can use it for investigation.
+    talkToNpc:
+      description: Talk to the Image Expert
+      crow:
+        mainId: 37
+        subId: 10
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Searching for the Recovery Oil
+    description: Go to the ship at Wharf No.3 and search for the Videotape Recovery Oil. You can find it on the deck of the ship. Please refer to the landmark 50, 56. You will need 3 Oil Bottles.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description: Go to the Ship at Wharf No.3 Location 50, 56
+      map:
+        mainId: 18
+        subId: 0
+      position: {x: 50, y: 56}
+      radius: 2
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest:
+    - item:
+        mainId: 106
+        subId: 1
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 1
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Searching for the Recovery Oil
+    description: Go to the ship at Wharf No.3 and search for the Videotape Recovery Oil. You can find it on the deck of the ship. Please refer to the landmark 49, 58. You still need 2 Oil Bottles.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description: Go to the Ship at Wharf No.3 Location 49, 58
+      map:
+        mainId: 18
+        subId: 0
+      position: {x: 49, y: 58}
+      radius: 2
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest:
+    - item:
+        mainId: 106
+        subId: 1
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 1
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Searching for the Recovery Oil
+    description: Go to the ship at Wharf No.3 and search for the Videotape Recovery Oil. You can find it on the deck of the ship. Please refer to the landmark 59, 58. Please find the last Oil Bottle you need.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description: Go to the Ship at Wharf No.3 Location 59, 58
+      map:
+        mainId: 18
+        subId: 0
+      position: {x: 59, y: 58}
+      radius: 2
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest:
+    - item:
+        mainId: 106
+        subId: 1
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 1
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Returning the Oil
+    description: If you already acquired all 3 bottles of the Recovery Oil, bring them to the Image Expert at Trading Hole Videotape Shop. Ask him to recover the videotape so that we can use it for the investigation.
+    talkToNpc:
+      description: Talk to the Image Expert
+      crow:
+        mainId: 37
+        subId: 10
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest:
+    - item:
+        mainId: 106
+        subId: 16
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 1
+    removeItemByQuest:
+    - item:
+        mainId: 106
+        subId: 1
+    - item:
+        mainId: 106
+        subId: 1
+    - item:
+        mainId: 106
+        subId: 1
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Returning the Videotape
+    description: Once the recovery of videotape is finished, bring it to the old man located near the Bus Stop of the Wharf Passage.
+    talkToNpc:
+      description: Talk to the Suspicious Folk
+      crow:
+        mainId: 39
+        subId: 2
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest:
+    - item:
+        mainId: 106
+        subId: 16
+    mobGenerateQuestItem:
+      description:
+      mobs: []

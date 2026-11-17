@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507134321ba6604dc6c2156f757585c4, type: 3}
+  m_Name: 00157
+  m_EditorClassIdentifier:
+  data:
+    questId: 192
+    isComplete: 0
+    success: 0
+    stepIndex: 0
+    killCount: 0
+    stepFlags: 0
+  questArea: 0
+  questTitle: 'Test by the Technical Teacher '
+  questDescription: In order to fight the enemy who is constantly getting stronger, the campus will always organize the testing on the students. Please accept the permanent test from the Technical Teacher for more instructions.
+  isRepeatable: 0
+  isCanRetry: 1
+  isCanGiveUp: 1
+  isParty: 0
+  isPartyQuest: 0
+  isOnlyProgress: 0
+  practiceCondition:
+    timeLimit: 20
+    partyMemberNum: 0
+    isFailureWhenDead: 1
+  preCondition:
+    money: 0
+    partyMemberNum: 0
+  autoStartCondition:
+    brawlerM: 1
+    swordsmanM: 1
+    archerM: 1
+    shamanM: 1
+    brawlerF: 1
+    swordsmanF: 1
+    archerF: 1
+    shamanF: 1
+    requiredLevel: 65535
+    school: 1
+    item:
+      mainId: 65535
+      subId: 65535
+    skill:
+      mainId: 65535
+      subId: 65535
+    map:
+      map:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      radius: 0
+  reward:
+    experienceReward: 15000
+    goldReward: 0
+    skillPointsReward: 1
+    statsPointsReward: 0
+    brightPointsReward: 0
+    lifePointsReward: 10
+    pkReward: 0
+    questReward: -1
+    rewardItem: []
+    rewardSkill: []
+  questProgress:
+    useProgress: 0
+    failType:
+      timeOver: 0
+      die: 0
+      leave: 0
+    progressStart:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressEnd:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressFail:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+  questStep:
+  - title: The Permanent Skill Test
+    description: To complete the test, you must eliminate 20 Uncle Potato within 20 minutes.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    killMob:
+      description: Eliminate 20 Uncle Potato
+      id:
+        mainId: 6
+        subId: 2
+      numberOfMobs: 20
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: The Confirmation of the Test Result
+    description: If you accomplished the test, please go and ask the Technical Teacher (SG) for the confirmation.
+    talkToNpc:
+      description: Talk to the Techical Teacher (SG)
+      crow:
+        mainId: 9
+        subId: 6
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []

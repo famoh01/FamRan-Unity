@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507134321ba6604dc6c2156f757585c4, type: 3}
+  m_Name: 00627
+  m_EditorClassIdentifier:
+  data:
+    questId: 632
+    isComplete: 0
+    success: 0
+    stepIndex: 0
+    killCount: 0
+    stepFlags: 0
+  questArea: 0
+  questTitle: Defeat the Bomber Clown
+  questDescription: Bomber Clown is considered as strong mob among enemies in the city. Please take more precaution
+  isRepeatable: 0
+  isCanRetry: 0
+  isCanGiveUp: 0
+  isParty: 0
+  isPartyQuest: 0
+  isOnlyProgress: 0
+  practiceCondition:
+    timeLimit: 0
+    partyMemberNum: 0
+    isFailureWhenDead: 0
+  preCondition:
+    money: 0
+    partyMemberNum: 0
+  autoStartCondition:
+    brawlerM: 0
+    swordsmanM: 0
+    archerM: 0
+    shamanM: 0
+    brawlerF: 0
+    swordsmanF: 0
+    archerF: 0
+    shamanF: 0
+    requiredLevel: 72
+    school: 0
+    item:
+      mainId: 65535
+      subId: 65535
+    skill:
+      mainId: 65535
+      subId: 65535
+    map:
+      map:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      radius: 0
+  reward:
+    experienceReward: 0
+    goldReward: 20000
+    skillPointsReward: 0
+    statsPointsReward: 0
+    brightPointsReward: 0
+    lifePointsReward: 0
+    pkReward: 0
+    questReward: -1
+    rewardItem:
+    - item:
+        mainId: 8
+        subId: 1
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 30
+    rewardSkill: []
+  questProgress:
+    useProgress: 0
+    failType:
+      timeOver: 0
+      die: 0
+      leave: 0
+    progressStart:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressEnd:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressFail:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+  questStep:
+  - title: Defeat the Bomber Clown
+    description: Please eliminate the Bomber Clownshow up around the Sacred Gate Hole Park
+    talkToNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    killMob:
+      description: Defeat the Bomber Clown
+      id:
+        mainId: 16
+        subId: 4
+      numberOfMobs: 10
+    reachMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 60
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Get confirmation
+    description: Report to  Chui Yin Xi once mission accomplished.
+    talkToNpc:
+      description: Get confirmation
+      crow:
+        mainId: 47
+        subId: 1
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 60
+    defendNpc:
+      description:
+      crow:
+        mainId: 0
+        subId: 0
+    reachLevel: 0
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 0
+        subId: 0
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []

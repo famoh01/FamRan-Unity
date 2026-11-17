@@ -1,0 +1,293 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507134321ba6604dc6c2156f757585c4, type: 3}
+  m_Name: 00516
+  m_EditorClassIdentifier:
+  data:
+    questId: 516
+    isComplete: 0
+    success: 0
+    stepIndex: 0
+    killCount: 0
+    stepFlags: 0
+  questArea: 0
+  questTitle: Laboratory in underground
+  questDescription: You've found how to connect Another World in Underground Laboratory with the documents in director room. Go to 1F and find the way to go Underground Laboratory
+  isRepeatable: 0
+  isCanRetry: 0
+  isCanGiveUp: 0
+  isParty: 0
+  isPartyQuest: 0
+  isOnlyProgress: 0
+  practiceCondition:
+    timeLimit: 0
+    partyMemberNum: 0
+    isFailureWhenDead: 0
+  preCondition:
+    money: 0
+    partyMemberNum: 0
+  autoStartCondition:
+    brawlerM: 1
+    swordsmanM: 1
+    archerM: 1
+    shamanM: 1
+    brawlerF: 1
+    swordsmanF: 1
+    archerF: 1
+    shamanF: 1
+    requiredLevel: 0
+    school: 0
+    item:
+      mainId: 65535
+      subId: 65535
+    skill:
+      mainId: 65535
+      subId: 65535
+    map:
+      map:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      radius: 0
+  reward:
+    experienceReward: 50000
+    goldReward: 100000
+    skillPointsReward: 0
+    statsPointsReward: 0
+    brightPointsReward: 5
+    lifePointsReward: 0
+    pkReward: 0
+    questReward: 517
+    rewardItem: []
+    rewardSkill: []
+  questProgress:
+    useProgress: 0
+    failType:
+      timeOver: 0
+      die: 0
+      leave: 0
+    progressStart:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressEnd:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressFail:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+  questStep:
+  - title: Go to 1F
+    description: Go down to 1F through one way passage beside the book shelf
+    talkToNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description: Go back to 1F
+      map:
+        mainId: 46
+        subId: 0
+      position: {x: 40, y: 22}
+      radius: 2
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Find the entrance of Underground Laboratory
+    description: Find the way to go underground first before finding Underground Laboratory.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description: Find the way to go underground from 1F
+      map:
+        mainId: 46
+        subId: 0
+      position: {x: 17, y: 22}
+      radius: 2
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Find the Password
+    description: The password is required to use the elevator. Find the password from copy spirit in 30F, 50F, and 90F
+    talkToNpc:
+      description: Use the password at Underground Terminal of security area.
+      crow:
+        mainId: 45
+        subId: 6
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 60
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description: Find the password from copy spirit in 30F, 50F, and 90F
+      mobs:
+      - item:
+          mainId: 108
+          subId: 22
+        genNumber: 1
+        genPercent: 10
+        genItem:
+        - mainId: 44
+          subId: 1
+        - mainId: 44
+          subId: 2
+        - mainId: 44
+          subId: 3
+        - mainId: 44
+          subId: 4
+  - title: Enter the password
+    description: Use the obtained password at Underground Terminal
+    talkToNpc:
+      description: Use the password at Underground Terminal of security area.
+      crow:
+        mainId: 65535
+        subId: 65535
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description: Find the password from copy spirit in 30F, 50F, and 90F
+      mobs: []

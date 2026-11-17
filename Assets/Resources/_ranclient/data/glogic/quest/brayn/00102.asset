@@ -1,0 +1,1334 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507134321ba6604dc6c2156f757585c4, type: 3}
+  m_Name: 00102
+  m_EditorClassIdentifier:
+  data:
+    questId: 121
+    isComplete: 0
+    success: 0
+    stepIndex: 0
+    killCount: 0
+    stepFlags: 0
+  questArea: 0
+  questTitle: The Force Field Authentication
+  questDescription: There's a Force Field System that protects us. But recently, the system outside the campus has gone haywire, which caused people and other creatures to mutate. Fortunately, the Force Field protecting the campus is still stable. Still, I need you to check on the Force Field Systems in the other areas. If you can authenticate the other Force Field Systems, you can increase its power.
+  isRepeatable: 0
+  isCanRetry: 0
+  isCanGiveUp: 0
+  isParty: 0
+  isPartyQuest: 0
+  isOnlyProgress: 0
+  practiceCondition:
+    timeLimit: 0
+    partyMemberNum: 0
+    isFailureWhenDead: 0
+  preCondition:
+    money: 0
+    partyMemberNum: 0
+  autoStartCondition:
+    brawlerM: 1
+    swordsmanM: 1
+    archerM: 1
+    shamanM: 1
+    brawlerF: 1
+    swordsmanF: 1
+    archerF: 1
+    shamanF: 1
+    requiredLevel: 65535
+    school: 0
+    item:
+      mainId: 65535
+      subId: 65535
+    skill:
+      mainId: 65535
+      subId: 65535
+    map:
+      map:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      radius: 0
+  reward:
+    experienceReward: 30000
+    goldReward: 0
+    skillPointsReward: 1
+    statsPointsReward: 0
+    brightPointsReward: 1
+    lifePointsReward: 10
+    pkReward: 0
+    questReward: -1
+    rewardItem:
+    - item:
+        mainId: 86
+        subId: 9
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 1
+    - item:
+        mainId: 87
+        subId: 9
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 1
+    rewardSkill: []
+  questProgress:
+    useProgress: 0
+    failType:
+      timeOver: 0
+      die: 0
+      leave: 0
+    progressStart:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressEnd:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressFail:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+  questStep:
+  - title: Test the Terminal in the Main Center
+    description: Confirm the location of the Main Center and check if the Terminal is functioning properly, activate the machine to test it.
+    talkToNpc:
+      description: Activate the Main Center Terminal
+      crow:
+        mainId: 9
+        subId: 48
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Collecting Spiritual Spheres
+    description: To completely authenticate the Force Field System, you must collect 2 Spiritual Spheres from the Little Hooligans around the area.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description: Collect 2 Spiritual Spheres from Little Hooligan
+      mobs:
+      - item:
+          mainId: 104
+          subId: 31
+        genNumber: 2
+        genPercent: 90
+        genItem:
+        - mainId: 0
+          subId: 0
+  - title: Optimize the Force Field System in the Main Center
+    description: Use the Spiritual Spheres to complete the Force Field System Authentication. You must follow the procedures in order to optimize its power.
+    talkToNpc:
+      description: Activate the Main Center Terminal
+      crow:
+        mainId: 9
+        subId: 48
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest:
+    - item:
+        mainId: 104
+        subId: 31
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Test the Terminal in the Study Classroom Center 1
+    description: Confirm the location of the Study Classroom Center 1 and check if the Terminal is functioning properly, activate the machine to test it.
+    talkToNpc:
+      description: Activate the Study Classroom Center 1 Terminal
+      crow:
+        mainId: 34
+        subId: 12
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Collecting Spiritual Spheres
+    description: To completely authenticate the Force Field System, you must collect 3 Spiritual Spheres from the Little Bandits near the area.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description: Collect 3 Spiritual Spheres from Little Bandit
+      mobs:
+      - item:
+          mainId: 104
+          subId: 31
+        genNumber: 3
+        genPercent: 90
+        genItem:
+        - mainId: 2
+          subId: 0
+  - title: Optimize the Force Field System in the Study Classroom Center 1
+    description: Use the Spiritual Spheres to complete the Force Field System Authentication. You must follow the procedures in order to optimize its power.
+    talkToNpc:
+      description: Activate the Study Classroom Center 1 Terminal
+      crow:
+        mainId: 34
+        subId: 12
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest:
+    - item:
+        mainId: 104
+        subId: 31
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Test the Terminal in the Renovation Center
+    description: Confirm the location of the Renovation Center and check if the Terminal is functioning properly, activate the machine to test it.
+    talkToNpc:
+      description: Activate the Renovation Center Terminal
+      crow:
+        mainId: 34
+        subId: 18
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Collecting Spiritual Spheres
+    description: To completely authenticate the Force Field System, you must collect 4 Spiritual Spheres from the Bandits around the area.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description: Collect 4 Spiritual Spheres from Bandit
+      mobs:
+      - item:
+          mainId: 104
+          subId: 31
+        genNumber: 4
+        genPercent: 80
+        genItem:
+        - mainId: 2
+          subId: 1
+  - title: Optimize the Force Field System in the Renovation Center
+    description: Use the Spiritual Spheres to complete the Force Field System Authentication. You must follow the procedures in order to optimize its power.
+    talkToNpc:
+      description: Activate the Renovation Center Terminal
+      crow:
+        mainId: 34
+        subId: 18
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest:
+    - item:
+        mainId: 104
+        subId: 31
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Test the Terminal in the Science Center
+    description: Confirm the location of the Science Center and check if the Terminal is functioning properly, activate the machine to test it.
+    talkToNpc:
+      description: Activate the Science Center Terminal
+      crow:
+        mainId: 34
+        subId: 17
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Collecting Spiritual Spheres
+    description: To completely authenticate the Force Field System, you must collect 7 Spiritual Spheres from the Gangsters around the area.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description: Collect 7 Spiritual Spheres from Gangster
+      mobs:
+      - item:
+          mainId: 104
+          subId: 31
+        genNumber: 7
+        genPercent: 90
+        genItem:
+        - mainId: 3
+          subId: 0
+  - title: Optimize the Force Field System in the Science Center
+    description: Use the Spiritual Spheres to complete the Force Field System Authentication. You must follow the procedures in order to optimize its power.
+    talkToNpc:
+      description: Activate the Dormitory Terminal
+      crow:
+        mainId: 34
+        subId: 17
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest:
+    - item:
+        mainId: 104
+        subId: 31
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Test the Terminal in the Practice Center
+    description: Confirm the location of the Practice Center and check if the Terminal is functioning properly, activate the machine to test it.
+    talkToNpc:
+      description: Activate the Practice Center Terminal
+      crow:
+        mainId: 34
+        subId: 26
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Collecting Spiritual Spheres
+    description: To completely authenticate the Force Field System, you must collect 10 Spiritual Spheres from the Sluggers around the area.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description: Collect 10 Spiritual Spheres from Slugger
+      mobs:
+      - item:
+          mainId: 104
+          subId: 31
+        genNumber: 10
+        genPercent: 90
+        genItem:
+        - mainId: 4
+          subId: 1
+  - title: Optimize the Force Field System in the Practice Center
+    description: Use the Spiritual Spheres to complete the Force Field System Authentication. You must follow the procedures in order to optimize its power.
+    talkToNpc:
+      description: Activate the Practice Center Terminal
+      crow:
+        mainId: 34
+        subId: 26
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest:
+    - item:
+        mainId: 104
+        subId: 31
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Test the Terminal in the Students Center 1
+    description: Confirm the location of the Students Center 1 and check if the Terminal is functioning properly, activate the machine to test it.
+    talkToNpc:
+      description: Activate the Students Center 1 Terminal
+      crow:
+        mainId: 34
+        subId: 29
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Collecting Spiritual Spheres
+    description: To completely authenticate the Force Field System, you must collect 13 Spiritual Spheres from the Slashers around the area.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description: Collect 13 Spiritual Spheres from Slasher
+      mobs:
+      - item:
+          mainId: 10
+          subId: 31
+        genNumber: 13
+        genPercent: 90
+        genItem:
+        - mainId: 6
+          subId: 0
+  - title: Optimize the Force Field System in the Students Center 1
+    description: Use the Spiritual Spheres to complete the Force Field System Authentication. You must follow the procedures in order to optimize its power.
+    talkToNpc:
+      description: Activate the Students Center 1 Terminal
+      crow:
+        mainId: 34
+        subId: 29
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest:
+    - item:
+        mainId: 104
+        subId: 31
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Test the Terminal in the Library
+    description: Confirm the location of the library and check if the Terminal is functioning properly, activate the machine to test it.
+    talkToNpc:
+      description: Activate the Library Terminal
+      crow:
+        mainId: 34
+        subId: 32
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Collecting Spiritual Spheres
+    description: To completely authenticate the Force Field System, you must collect 18 Spiritual Spheres from the Brawlers around the area.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description: Collect 15 Spiritual Spheres from Brawler
+      mobs:
+      - item:
+          mainId: 104
+          subId: 31
+        genNumber: 18
+        genPercent: 90
+        genItem:
+        - mainId: 6
+          subId: 0
+  - title: Optimize the Force Field System in the Library
+    description: Use the Spiritual Spheres to complete the Force Field System Authentication. You must follow the procedures in order to optimize its power.
+    talkToNpc:
+      description: Activate the Library Terminal
+      crow:
+        mainId: 34
+        subId: 32
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest:
+    - item:
+        mainId: 104
+        subId: 31
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Test the Terminal in the Auxiliary Supplies Room
+    description: Confirm the location of the Auxiliary Supplies Room and check if the Terminal is functioning properly, activate the machine to test it.
+    talkToNpc:
+      description: Activate the Auxiliary Supplies Room Terminal
+      crow:
+        mainId: 34
+        subId: 31
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Collecting Spiritual Spheres
+    description: To completely authenticate the Force Field System, you must collect 15 Spiritual Spheres from the Jr. Bruisers around the area.
+    talkToNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description: Collect 18 Spiritual Spheres from Jr. Bruiser
+      mobs:
+      - item:
+          mainId: 104
+          subId: 31
+        genNumber: 15
+        genPercent: 90
+        genItem:
+        - mainId: 10
+          subId: 0
+  - title: Optimize the Force Field System in the Auxiliary Supplies Room
+    description: Use the Spiritual Spheres to complete the Force Field System Authentication. You must follow the procedures in order to optimize its power.
+    talkToNpc:
+      description: Activate the Auxiliary Supplies Room Terminal
+      crow:
+        mainId: 34
+        subId: 31
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest:
+    - item:
+        mainId: 104
+        subId: 31
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Final Force Field Authentication
+    description: Please finalize the Force Field Authentications to the Student Director at the Admin Office.
+    talkToNpc:
+      description: Talk to the Student Director
+      crow:
+        mainId: 34
+        subId: 8
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []

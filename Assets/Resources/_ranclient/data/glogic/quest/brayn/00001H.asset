@@ -1,0 +1,436 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 507134321ba6604dc6c2156f757585c4, type: 3}
+  m_Name: 00001H
+  m_EditorClassIdentifier:
+  data:
+    questId: 1
+    isComplete: 0
+    success: 0
+    stepIndex: 0
+    killCount: 0
+    stepFlags: 0
+  questArea: 0
+  questTitle: 'Student''s Registration '
+  questDescription: The automated registration process is currently unavailable. Proceed to the Brawler Instructor to get an application form. Your Instructor will then give you further steps. After you complete the registration process, you will be provided with skill points. Press the [Details] button, if you wish to see more detailed information.
+  isRepeatable: 0
+  isCanRetry: 0
+  isCanGiveUp: 0
+  isParty: 0
+  isPartyQuest: 0
+  isOnlyProgress: 0
+  practiceCondition:
+    timeLimit: 0
+    partyMemberNum: 0
+    isFailureWhenDead: 0
+  preCondition:
+    money: 0
+    partyMemberNum: 0
+  autoStartCondition:
+    brawlerM: 1
+    swordsmanM: 0
+    archerM: 0
+    shamanM: 0
+    brawlerF: 1
+    swordsmanF: 0
+    archerF: 0
+    shamanF: 0
+    requiredLevel: 2
+    school: 2
+    item:
+      mainId: 65535
+      subId: 65535
+    skill:
+      mainId: 65535
+      subId: 65535
+    map:
+      map:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      radius: 0
+  reward:
+    experienceReward: 200
+    goldReward: 0
+    skillPointsReward: 0
+    statsPointsReward: 0
+    brightPointsReward: 0
+    lifePointsReward: 0
+    pkReward: 0
+    questReward: -1
+    rewardItem:
+    - item:
+        mainId: 4
+        subId: 0
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 10
+    rewardSkill: []
+  questProgress:
+    useProgress: 0
+    failType:
+      timeOver: 0
+      die: 0
+      leave: 0
+    progressStart:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressEnd:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+    progressFail:
+      type: 0
+      mapId:
+        mainId: 65535
+        subId: 65535
+      pos: {x: 0, y: 0}
+      gateId: 0
+  questStep:
+  - title: Acquiring a Registration Form
+    description: 'Proceed to the Instructor in the Brawler Section and get the application for registration. Since the student registration needs to be done manually, the form must be acquired from the instructor himself. If you fail to find him, please refer to the landmark X:11 Y:7. '
+    talkToNpc:
+      description: Talk to the Brawler Instructor
+      crow:
+        mainId: 32
+        subId: 1
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest:
+    - item:
+        mainId: 108
+        subId: 2
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 1
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Confirm the location of the Health Room
+    description: 'The Health Room provides free medical treatments. During the registration period, students must be familiar with the locations that will often be visited in the future. If you fail to find it, do refer to landmark X:4 Y:22. '
+    talkToNpc:
+      description: Talk to the Nurse
+      crow:
+        mainId: 32
+        subId: 5
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Delivering the Registration Form
+    description: 'Please submit the registration form to the Student Director at the Admin Office after filling it up.The Admin Office is located at the entrance of Main Center 1st floor, next to the Grocery Merchant. If you fail to find it, do refer to landmark X:8 Y:0. '
+    talkToNpc:
+      description: Talk to the Student Director
+      crow:
+        mainId: 32
+        subId: 8
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest:
+    - item:
+        mainId: 108
+        subId: 3
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 1
+    removeItemByQuest:
+    - item:
+        mainId: 108
+        subId: 2
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Collecting the Bread
+    description: 'Eating Bread recovers your HP. For registered students, please collect the Bread from the vendor at the Welfare Society. The Grocery Merchant is located at the 1st floor Main Campus, next to the entrance. If you fail to find it, please refer to landmark X:10 Y:3. '
+    talkToNpc:
+      description: Talk to the Grocery Merchant
+      crow:
+        mainId: 8
+        subId: 3
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest:
+    - item:
+        mainId: 4
+        subId: 0
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 10
+    removeItemByQuest: []
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Final Confirmation
+    description: Return to the Brawler Section and hand over the Completed Registration Form to the Instructor. After getting the final approval, acquire the Exit Application Form. This rule is to ensure every student's safety within the campus. It is a must that the students complete the Exit Application. If you fail to find it, do refer to land mark X:11 Y:7.
+    talkToNpc:
+      description: Talk to the Brawler Instructor
+      crow:
+        mainId: 32
+        subId: 1
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest:
+    - item:
+        mainId: 108
+        subId: 4
+      attack: 0
+      defense: 0
+      resistanceElec: 0
+      resistanceFire: 0
+      resistanceIce: 0
+      resistancePoison: 0
+      resistanceSpirit: 0
+      turnNum: 1
+    removeItemByQuest:
+    - item:
+        mainId: 108
+        subId: 3
+    mobGenerateQuestItem:
+      description:
+      mobs: []
+  - title: Exit Approval
+    description: 'Submit the Exit Application Form to the Student Director at the Admin Office. Collect all the needed basic equipments and wisely use the provided skill points. If you fail to find it, do refer to land mark X:8 Y:0. '
+    talkToNpc:
+      description: Talk to the Student Director
+      crow:
+        mainId: 32
+        subId: 8
+    killMob:
+      description:
+      id:
+        mainId: 0
+        subId: 0
+      numberOfMobs: 0
+    reachMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+    defendNpc:
+      description:
+      crow:
+        mainId: 65535
+        subId: 65535
+    reachLevel: 65535
+    moveMap:
+      id:
+        mainId: 0
+        subId: 0
+      posXY: {x: 0, y: 0}
+      gate: 0
+    defendMap:
+      description:
+      map:
+        mainId: 65535
+        subId: 65535
+      position: {x: 0, y: 0}
+      radius: 0
+      time_minutes: 0
+    gainItemByQuest: []
+    removeItemByQuest:
+    - item:
+        mainId: 108
+        subId: 4
+    - item:
+        mainId: 4
+        subId: 0
+    mobGenerateQuestItem:
+      description:
+      mobs: []

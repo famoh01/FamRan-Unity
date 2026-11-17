@@ -1,0 +1,282 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b9f1a5c1980f38d357b38734505346, type: 3}
+  m_Name: class03
+  m_EditorClassIdentifier:
+  tribe: 0
+  emClass: 8
+  school: 0
+  hair: 0
+  face: 0
+  bright: 1
+  level: 1
+  guild: 0
+  money: 0
+  statsPoint: 3
+  skillPoint: 1
+  CharConstant:
+    _walkVelocity: 12
+    _runVelocity: 39
+    _HP_Str: 1.7
+    _MP_Spi: 1.3
+    _SP_Sta: 1.06
+    _hit_Dex: 0
+    _avoid_Dex: 0
+    _defense_Dex: 0.1
+    _PA_Pow: 0.18
+    _PA_Dex: 0.12
+    _SA_Pow: 0.08
+    _SA_Dex: 0.2
+    _MA_Dex: 0.2
+    _MA_Spi: 0.28
+    _MA_Int: 0
+    _conv_AP: 0.4
+    _conv_DP: 0.33
+    _conv_PA: 0.6
+    _conv_SA: 0.4
+    _Begin_AP: 3
+    _Begin_DP: 4
+    _Begin_PA: 4
+    _Begin_SA: 4
+    _LevelUp_AP: 1.2
+    _LevelUp_DP: 0.08
+    _LevelUp_PA: 0.4
+    _LevelUp_SA: 0.3
+    _Begin_Stats:
+      Pow: 6
+      Str: 32
+      Spi: 36
+      Dex: 10
+      Int: 0
+      Sta: 6
+    _LevelUp_Stats:
+      Pow: 0.3
+      Str: 4
+      Spi: 0.75
+      Dex: 0.33
+      Int: 0
+      Sta: 2.6
+    Animations:
+    - mainType: 4
+      subType: 0
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4800
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 40060000
+    - mainType: 4
+      subType: 10
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4800
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 60090000
+    - mainType: 4
+      subType: 10
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4800
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 400b0000
+    - mainType: 4
+      subType: 5
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 3840
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 80070000
+    - mainType: 4
+      subType: 5
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 3360
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 40060000
+    - mainType: 4
+      subType: 5
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4160
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 000a0000
+    - mainType: 4
+      subType: 4
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4800
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 60090000
+    - mainType: 4
+      subType: 4
+      animationName:
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 4800
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: a00a0000
+    - mainType: 5
+      subType: 0
+      animationName: Shock
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 1760
+      animUnitTime: 160
+      animDivNum: 0
+      animDivFrame:
+  experience:
+    _min: 0
+    _max: 318
+  hp:
+    _min: 111
+    _max: 111
+  mp:
+    _min: 28
+    _max: 28
+  sp:
+    _min: 10
+    _max: 10
+  pk: 0
+  startMapId:
+    mainId: 2
+    subId: 0
+  startGate: 6
+  startPos: {x: 0, y: 0, z: 0}
+  item:
+  - mainId: 4
+    subId: 4
+  quest: 00000000
+  putOnItems:
+  - position: 1
+    item:
+      mainId: 38
+      subId: 1
+    quantity: 0
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  - position: 2
+    item:
+      mainId: 41
+      subId: 1
+    quantity: 0
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  - position: 3
+    item:
+      mainId: 65535
+      subId: 65535
+    quantity: 0
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  - position: 4
+    item:
+      mainId: 44
+      subId: 1
+    quantity: 0
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  - position: 5
+    item:
+      mainId: 75
+      subId: 9
+    quantity: 0
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  inventory:
+  - item:
+      mainId: 4
+      subId: 4
+    quantity: 10
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  - item:
+      mainId: 130
+      subId: 2
+    quantity: 1
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0
+  - item:
+      mainId: 115
+      subId: 46
+    quantity: 1
+    upgrade:
+      attack: 0
+      defense: 0
+    element:
+      Electric: 0
+      Fire: 0
+      Ice: 0
+      Poison: 0
+      Wind: 0

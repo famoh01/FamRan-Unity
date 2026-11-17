@@ -1,0 +1,26 @@
+public enum TalkBasicDesc
+{
+	Open_Locker = 0,
+	Shop = 1,
+	Heal = 2,
+	Save_Position = 3,
+	Reset_StatsorSkill = 4,
+	Trade_Item = 5,
+	Bus_Station = 6,
+	Create_Club = 7,
+	Upgrade_Club = 8,
+	CD_Certify = 9,
+	Change_Tax_Rate = 10,
+	Use_Club_Locker = 11,
+	Item_Rebuild = 12,
+	Simple_Gamble = 13,
+	EXP_Recovery = 14,
+	Random_NPCTalk = 15,
+	Item_Search = 16,
+	Attendance_Function = 17,
+	Item_Mix = 18,
+	NPCShop = 19,
+	NPCItemExchange = 20,
+	Exit = 21,
+	Bright_Cleanse = 22
+}

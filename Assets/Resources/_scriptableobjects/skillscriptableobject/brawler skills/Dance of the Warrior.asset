@@ -1,0 +1,931 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20f716a9b0b1a6c7613162772d571a4b, type: 3}
+  m_Name: Dance of the Warrior
+  m_EditorClassIdentifier:
+  data:
+    mainId: 0
+    subId: 10
+  Name: Dance of the Warrior
+  grade: 13
+  maxLevel: 9
+  targetRange: 10
+  delayDamage: 0
+  fArrowSpeed: 300
+  description: Attacks your enemy rapidly with strong punches and kicks.
+  skillRole: 0
+  skillAction: 0
+  skillApply: 0
+  skillTarget: 1
+  skillArea: 1
+  skillSide: 1
+  useLeftItem: 18
+  useRightItem: 7
+  Animation:
+    mainType: 0
+    subType: 0
+    animationName: dex11
+    isLooping: 0
+    animStartTime: 0
+    animEndTime: 7360
+    animUnitTime: 160
+    animDivNum: 3
+    animDivFrame: 00050000800c0000c0170000
+  animationKey: dex11
+  skillApplySettings:
+    basicType: 0
+    element: 9
+    dataLevel:
+    - delayTime: 10
+      life: 5
+      applyRange: 20
+      applyNum: 1
+      applyAngle: 45
+      pierceNum: 0
+      tarNum: 5
+      basicVar: -1258
+      useArrowNum: 0
+      useCharmNum: 0
+      useBulletNum: 0
+      useExp: 0
+      useHP: 0
+      useMP: 10
+      useSP: 10
+      useCP: 0
+      data: 0
+      useHPPty: 0
+      useMPPty: 0
+      useSPPty: 0
+    - delayTime: 9.5
+      life: 5
+      applyRange: 21
+      applyNum: 1
+      applyAngle: 45
+      pierceNum: 0
+      tarNum: 5
+      basicVar: -1274
+      useArrowNum: 0
+      useCharmNum: 0
+      useBulletNum: 0
+      useExp: 0
+      useHP: 0
+      useMP: 10
+      useSP: 10
+      useCP: 0
+      data: 0
+      useHPPty: 0
+      useMPPty: 0
+      useSPPty: 0
+    - delayTime: 9
+      life: 5
+      applyRange: 22
+      applyNum: 1
+      applyAngle: 45
+      pierceNum: 0
+      tarNum: 6
+      basicVar: -1290
+      useArrowNum: 0
+      useCharmNum: 0
+      useBulletNum: 0
+      useExp: 0
+      useHP: 0
+      useMP: 10
+      useSP: 10
+      useCP: 0
+      data: 0
+      useHPPty: 0
+      useMPPty: 0
+      useSPPty: 0
+    - delayTime: 8.5
+      life: 5
+      applyRange: 23
+      applyNum: 1
+      applyAngle: 45
+      pierceNum: 0
+      tarNum: 6
+      basicVar: -1306
+      useArrowNum: 0
+      useCharmNum: 0
+      useBulletNum: 0
+      useExp: 0
+      useHP: 0
+      useMP: 10
+      useSP: 11
+      useCP: 0
+      data: 0
+      useHPPty: 0
+      useMPPty: 0
+      useSPPty: 0
+    - delayTime: 8
+      life: 5
+      applyRange: 24
+      applyNum: 1
+      applyAngle: 45
+      pierceNum: 0
+      tarNum: 7
+      basicVar: -1322
+      useArrowNum: 0
+      useCharmNum: 0
+      useBulletNum: 0
+      useExp: 0
+      useHP: 0
+      useMP: 10
+      useSP: 11
+      useCP: 0
+      data: 0
+      useHPPty: 0
+      useMPPty: 0
+      useSPPty: 0
+    - delayTime: 7.5
+      life: 5
+      applyRange: 25
+      applyNum: 1
+      applyAngle: 45
+      pierceNum: 0
+      tarNum: 7
+      basicVar: -1338
+      useArrowNum: 0
+      useCharmNum: 0
+      useBulletNum: 0
+      useExp: 0
+      useHP: 0
+      useMP: 10
+      useSP: 11
+      useCP: 0
+      data: 0
+      useHPPty: 0
+      useMPPty: 0
+      useSPPty: 0
+    - delayTime: 7
+      life: 5
+      applyRange: 26
+      applyNum: 1
+      applyAngle: 45
+      pierceNum: 0
+      tarNum: 8
+      basicVar: -1354
+      useArrowNum: 0
+      useCharmNum: 0
+      useBulletNum: 0
+      useExp: 0
+      useHP: 0
+      useMP: 10
+      useSP: 12
+      useCP: 0
+      data: 0
+      useHPPty: 0
+      useMPPty: 0
+      useSPPty: 0
+    - delayTime: 6.5
+      life: 5
+      applyRange: 27
+      applyNum: 1
+      applyAngle: 45
+      pierceNum: 0
+      tarNum: 8
+      basicVar: -1370
+      useArrowNum: 0
+      useCharmNum: 0
+      useBulletNum: 0
+      useExp: 0
+      useHP: 0
+      useMP: 10
+      useSP: 12
+      useCP: 0
+      data: 0
+      useHPPty: 0
+      useMPPty: 0
+      useSPPty: 0
+    - delayTime: 6
+      life: 5
+      applyRange: 28
+      applyNum: 1
+      applyAngle: 45
+      pierceNum: 0
+      tarNum: 9
+      basicVar: -1386
+      useArrowNum: 0
+      useCharmNum: 0
+      useBulletNum: 0
+      useExp: 0
+      useHP: 0
+      useMP: 10
+      useSP: 12
+      useCP: 0
+      data: 0
+      useHPPty: 0
+      useMPPty: 0
+      useSPPty: 0
+    cureFlag: 0
+    stateBlow: 2
+    stateBlows:
+    - rate: 40
+      var1: 0
+      var2: 0
+    - rate: 42
+      var1: 0
+      var2: 0
+    - rate: 44
+      var1: 0
+      var2: 0
+    - rate: 46
+      var1: 0
+      var2: 0
+    - rate: 48
+      var1: 0
+      var2: 0
+    - rate: 50
+      var1: 0
+      var2: 0
+    - rate: 52
+      var1: 0
+      var2: 0
+    - rate: 54
+      var1: 0
+      var2: 0
+    - rate: 56
+      var1: 0
+      var2: 0
+    impacts:
+    - impactAddOnEnum: 10
+      addOnVar:
+      - -0.05
+      - -0.05
+      - -0.05
+      - -0.05
+      - -0.06
+      - -0.07
+      - -0.08
+      - -0.09
+      - -0.1
+      addOnVar2:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+    - impactAddOnEnum: 0
+      addOnVar:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      addOnVar2:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+    - impactAddOnEnum: 0
+      addOnVar:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      addOnVar2:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+    - impactAddOnEnum: 0
+      addOnVar:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      addOnVar2:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+    - impactAddOnEnum: 0
+      addOnVar:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      addOnVar2:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+    specs:
+    - specAddOnEnum: 1
+      spec:
+      - var1: 2
+        var2: 0.4
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 2
+        var2: 0.4
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 2
+        var2: 0.4
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 2
+        var2: 0.4
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 2
+        var2: 0.4
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 2
+        var2: 0.4
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 2
+        var2: 0.4
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 2
+        var2: 0.4
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 2
+        var2: 0.4
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+    - specAddOnEnum: 0
+      spec:
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+    - specAddOnEnum: 0
+      spec:
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+    - specAddOnEnum: 0
+      spec:
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+    - specAddOnEnum: 0
+      spec:
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+      - var1: 0
+        var2: 0
+        var3: 1
+        var4: 1
+        flag: 0
+        nativeId:
+          mainId: 65535
+          subId: 65535
+    unknownData: 0
+  skillLearnSettings:
+    class: 130
+    bright: 2
+    skill:
+      mainId: 0
+      subId: 6
+    levelStep:
+    - level: 127
+      stats:
+        Pow: 0
+        Str: 0
+        Spi: 0
+        Dex: 315
+        Int: 0
+        Sta: 0
+      skp: 13
+      skillLevel: 1
+    - level: 1
+      stats:
+        Pow: 0
+        Str: 0
+        Spi: 0
+        Dex: 320
+        Int: 0
+        Sta: 0
+      skp: 1
+      skillLevel: 0
+    - level: 1
+      stats:
+        Pow: 0
+        Str: 0
+        Spi: 0
+        Dex: 325
+        Int: 0
+        Sta: 0
+      skp: 1
+      skillLevel: 0
+    - level: 1
+      stats:
+        Pow: 0
+        Str: 0
+        Spi: 0
+        Dex: 330
+        Int: 0
+        Sta: 0
+      skp: 1
+      skillLevel: 0
+    - level: 1
+      stats:
+        Pow: 0
+        Str: 0
+        Spi: 0
+        Dex: 335
+        Int: 0
+        Sta: 0
+      skp: 1
+      skillLevel: 0
+    - level: 1
+      stats:
+        Pow: 0
+        Str: 0
+        Spi: 0
+        Dex: 340
+        Int: 0
+        Sta: 0
+      skp: 1
+      skillLevel: 0
+    - level: 1
+      stats:
+        Pow: 0
+        Str: 0
+        Spi: 0
+        Dex: 345
+        Int: 0
+        Sta: 0
+      skp: 1
+      skillLevel: 0
+    - level: 1
+      stats:
+        Pow: 0
+        Str: 0
+        Spi: 0
+        Dex: 350
+        Int: 0
+        Sta: 0
+      skp: 1
+      skillLevel: 0
+    - level: 1
+      stats:
+        Pow: 0
+        Str: 0
+        Spi: 0
+        Dex: 355
+        Int: 0
+        Sta: 0
+      skp: 1
+      skillLevel: 0
+  IconSource: {fileID: 21300000, guid: bf062e6280d211743bd73176810ca0f2, type: 2}
+  iconSourceRound: {fileID: 0}
+  skillProjectile: {fileID: 0}
+  applySkillArrowProjectile: 0
+  applySkillArrowProjectileDelayStart: 0
+  applySkillArrowProjectileLoop: 0
+  applySkillArrowProjectileLoopAmount: 0
+  applySkillArrowProjectileLoopDelay: 0
+  ignoreArrowFlightCap: 0
+  overrideSpawner: 0
+  spawnerPosition:
+    x: 0
+    y: 0
+    z: 0
+  OnPlayerSkillEffect:
+  - effectType: 0
+    effect: {fileID: 1709254077376921, guid: 550d3dbdd9d5e2547969151ae438144e, type: 2}
+    head: 0
+    rightHand: 0
+    leftHand: 0
+    rightFoot: 1
+    leftFoot: 0
+    mainBody: 0
+    mainBodyParent: 0
+    floor: 0
+    skillSpawnDelay: 0
+    nonParent: 0
+    distance: 0
+    npOffsetX: 0
+    npOffsetY: 0
+    npOffsetZ: 0
+    swordEffect: 0
+    swordBoneEffect: 0
+    stickEffect: 0
+    stickBoneEffect: 0
+    canBeDestroy: 0
+    effectLifetime: 1.7
+    delayTime: 0
+    intValue: 0
+    effectTime: 0
+  - effectType: 0
+    effect: {fileID: 1709254077376921, guid: 6948f58f4580d9d41810b6f2f479cf9f, type: 2}
+    head: 0
+    rightHand: 1
+    leftHand: 1
+    rightFoot: 0
+    leftFoot: 0
+    mainBody: 0
+    mainBodyParent: 0
+    floor: 0
+    skillSpawnDelay: 0
+    nonParent: 0
+    distance: 0
+    npOffsetX: 0
+    npOffsetY: 0
+    npOffsetZ: 0
+    swordEffect: 0
+    swordBoneEffect: 0
+    stickEffect: 0
+    stickBoneEffect: 0
+    canBeDestroy: 0
+    effectLifetime: 1.7
+    delayTime: 0
+    intValue: 0
+    effectTime: 0
+  OnEnemySkillEffect:
+  - effectType: 0
+    effect: {fileID: 1709254077376921, guid: 1271faf1d4be79b4a9f23cce5cc5ad38, type: 2}
+    enemyMainBody: 1
+    enemyFloor: 0
+    enemyNonParent: 0
+    skillSpawnDelay: 0.1
+    canBeCancel: 0
+    effectLifetime: 0.4
+    delayTime: 0
+    intValue: 0
+    effectTime: 0
+  - effectType: 0
+    effect: {fileID: 1709254077376921, guid: 1271faf1d4be79b4a9f23cce5cc5ad38, type: 2}
+    enemyMainBody: 1
+    enemyFloor: 0
+    enemyNonParent: 0
+    skillSpawnDelay: 0.6
+    canBeCancel: 0
+    effectLifetime: 0.4
+    delayTime: 0
+    intValue: 0
+    effectTime: 0
+  - effectType: 0
+    effect: {fileID: 1709254077376921, guid: 1271faf1d4be79b4a9f23cce5cc5ad38, type: 2}
+    enemyMainBody: 1
+    enemyFloor: 0
+    enemyNonParent: 0
+    skillSpawnDelay: 1.3
+    canBeCancel: 0
+    effectLifetime: 0.4
+    delayTime: 0
+    intValue: 0
+    effectTime: 0

@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3f1e1bc1c09760ad96be565ab5834e, type: 3}
+  m_Name: bookkeeper
+  m_EditorClassIdentifier:
+  title: Item Exchange
+  entries:
+  - id: 1
+    resultItem:
+      mainId: 184
+      subId: 15
+    resultNum: 3
+    damage: 0
+    defense: 0
+    resistFire: 0
+    resistIce: 0
+    resistElec: 0
+    resistPoison: 0
+    resistSpirit: 0
+    generateRandomValue: 0
+    requires:
+    - itemId:
+        mainId: 168
+        subId: 3
+      num: 1000
+  - id: 2
+    resultItem:
+      mainId: 184
+      subId: 15
+    resultNum: 3
+    damage: 0
+    defense: 0
+    resistFire: 0
+    resistIce: 0
+    resistElec: 0
+    resistPoison: 0
+    resistSpirit: 0
+    generateRandomValue: 0
+    requires:
+    - itemId:
+        mainId: 168
+        subId: 1
+      num: 100
+  - id: 3
+    resultItem:
+      mainId: 184
+      subId: 14
+    resultNum: 3
+    damage: 0
+    defense: 0
+    resistFire: 0
+    resistIce: 0
+    resistElec: 0
+    resistPoison: 0
+    resistSpirit: 0
+    generateRandomValue: 0
+    requires:
+    - itemId:
+        mainId: 168
+        subId: 1
+      num: 100
+  - id: 4
+    resultItem:
+      mainId: 168
+      subId: 7
+    resultNum: 1000
+    damage: 0
+    defense: 0
+    resistFire: 0
+    resistIce: 0
+    resistElec: 0
+    resistPoison: 0
+    resistSpirit: 0
+    generateRandomValue: 0
+    requires:
+    - itemId:
+        mainId: 168
+        subId: 1
+      num: 100
+  - id: 5
+    resultItem:
+      mainId: 168
+      subId: 4
+    resultNum: 1
+    damage: 0
+    defense: 0
+    resistFire: 0
+    resistIce: 0
+    resistElec: 0
+    resistPoison: 0
+    resistSpirit: 0
+    generateRandomValue: 0
+    requires:
+    - itemId:
+        mainId: 168
+        subId: 1
+      num: 300
+  - id: 6
+    resultItem:
+      mainId: 168
+      subId: 9
+    resultNum: 1
+    damage: 0
+    defense: 0
+    resistFire: 0
+    resistIce: 0
+    resistElec: 0
+    resistPoison: 0
+    resistSpirit: 0
+    generateRandomValue: 0
+    requires:
+    - itemId:
+        mainId: 168
+        subId: 2
+      num: 400
+    - itemId:
+        mainId: 168
+        subId: 4
+      num: 1
+  - id: 7
+    resultItem:
+      mainId: 168
+      subId: 8
+    resultNum: 1
+    damage: 0
+    defense: 0
+    resistFire: 0
+    resistIce: 0
+    resistElec: 0
+    resistPoison: 0
+    resistSpirit: 0
+    generateRandomValue: 0
+    requires:
+    - itemId:
+        mainId: 168
+        subId: 1
+      num: 200
+    - itemId:
+        mainId: 168
+        subId: 2
+      num: 200
+  - id: 8
+    resultItem:
+      mainId: 168
+      subId: 5
+    resultNum: 1
+    damage: 0
+    defense: 0
+    resistFire: 0
+    resistIce: 0
+    resistElec: 0
+    resistPoison: 0
+    resistSpirit: 0
+    generateRandomValue: 0
+    requires:
+    - itemId:
+        mainId: 168
+        subId: 1
+      num: 200
+    - itemId:
+        mainId: 168
+        subId: 3
+      num: 50
+    - itemId:
+        mainId: 168
+        subId: 2
+      num: 150
+  - id: 9
+    resultItem:
+      mainId: 168
+      subId: 6
+    resultNum: 1
+    damage: 0
+    defense: 0
+    resistFire: 0
+    resistIce: 0
+    resistElec: 0
+    resistPoison: 0
+    resistSpirit: 0
+    generateRandomValue: 0
+    requires:
+    - itemId:
+        mainId: 168
+        subId: 1
+      num: 200
+    - itemId:
+        mainId: 168
+        subId: 3
+      num: 50
+    - itemId:
+        mainId: 168
+        subId: 2
+      num: 150

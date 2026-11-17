@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a50891d634c7151f3c924d385af49d5, type: 3}
+  m_Name: Dark Swordsman
+  m_EditorClassIdentifier:
+  data:
+    mainId: 0
+    subId: 6
+  Name: Dark Swordsman
+  IconSource: {fileID: 21300000, guid: ac57b5b7948d9fa46aa8b30dccaf600c, type: 2}
+  crowTribe: 0
+  crowType: 2
+  crowBright: 1
+  petType: 0
+  summonType: 0
+  npcType: 0
+  overlapAttack: 0
+  shortReactionTarget: 1
+  cdCertify: 0
+  invisible: 0
+  detectInvisible: 0
+  obstacle: 0
+  holdPosition: 0
+  holdDirection: 0
+  genNotice: 1
+  bossMob: 1
+  busStation: 0
+  ignoreShock: 0
+  hideName: 0
+  noticeRespawn: 0
+  noticeRespawn2: 0
+  noticeDefeat: 0
+  noticeDefeat2: 0
+  hp: 50000
+  mp: 1000
+  sp: 1000
+  hpRecovery: 7
+  mpRecovery: 3
+  spRecovery: 3
+  level: 100
+  defense: 150
+  avoidRate: 20
+  hitRate: 50
+  viewRange: 80
+  genTime: 0
+  bonusExp: 8000
+  bonusCp: 0
+  skinFile: {fileID: 11400000, guid: b4d7cc5dcca314544b63c84e8d929f99, type: 2}
+  talkFilePath:
+  crowSale: []
+  shopFileName:
+  npcShop: {fileID: 0}
+  exchangeFileName:
+  npcItemExchange: {fileID: 0}
+  bodyRadius: 8
+  walkSpeed: 15
+  run: 1
+  runSpeed: 39
+  autoDropout: 0
+  dropoutTime: 0
+  afterDeathNobody: 0
+  genItemFileName: boss.genitem
+  qGenItemFileName:
+  moneyValue: 0
+  moneyRate: 0
+  moneyLuckRate: 8
+  moneyLuckMaxNum: 1
+  crowAttack:
+  - isUse: 1
+    rangeType: 0
+    attackRange: 14
+    damage:
+      _min: 500
+      _max: 680
+    delay: 0.8
+    spUsage: 1
+    _animationInfo:
+      mainType: 0
+      subType: 0
+      animationName: Attack01
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 3840
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 40060000
+    skillId:
+      mainId: 16
+      subId: 5
+    skillTarget: 1
+  - isUse: 1
+    rangeType: 0
+    attackRange: 16
+    damage:
+      _min: 500
+      _max: 600
+    delay: 0.8
+    spUsage: 1
+    _animationInfo:
+      mainType: 0
+      subType: 0
+      animationName: Attack02
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 11200
+      animUnitTime: 160
+      animDivNum: 2
+      animDivFrame: e015000080250000
+    skillId:
+      mainId: 6
+      subId: 3
+    skillTarget: 1
+  - isUse: 1
+    rangeType: 0
+    attackRange: 12
+    damage:
+      _min: 500
+      _max: 580
+    delay: 0.5
+    spUsage: 1
+    _animationInfo:
+      mainType: 0
+      subType: 0
+      animationName: Attack03
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 6080
+      animUnitTime: 160
+      animDivNum: 3
+      animDivFrame: 60040000000a0000a00f0000
+    skillId:
+      mainId: 16
+      subId: 6
+    skillTarget: 1
+  crowPattern:
+  - dnRate: 90
+    actPattern: 0
+    attackSet: 10
+  skill:
+    mainId: 65535
+    subId: 65535
+  skillLevel: 0
+  skillTarget: 0
+  resistance:
+    Electric: 25
+    Fire: 25
+    Ice: 25
+    Poison: 25
+    Wind: 30
+  reviveGate: -1
+  nameplateHeightOffset: 0

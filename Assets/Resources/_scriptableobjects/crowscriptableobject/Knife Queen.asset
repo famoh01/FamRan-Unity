@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a50891d634c7151f3c924d385af49d5, type: 3}
+  m_Name: Knife Queen
+  m_EditorClassIdentifier:
+  data:
+    mainId: 65
+    subId: 5
+  Name: Knife Queen
+  IconSource: {fileID: 21300000, guid: ac57b5b7948d9fa46aa8b30dccaf600c, type: 2}
+  crowTribe: 0
+  crowType: 2
+  crowBright: 2
+  petType: 0
+  summonType: 0
+  npcType: 0
+  overlapAttack: 0
+  shortReactionTarget: 1
+  cdCertify: 0
+  invisible: 0
+  detectInvisible: 0
+  obstacle: 0
+  holdPosition: 0
+  holdDirection: 0
+  genNotice: 0
+  bossMob: 0
+  busStation: 0
+  ignoreShock: 0
+  hideName: 0
+  noticeRespawn: 0
+  noticeRespawn2: 0
+  noticeDefeat: 0
+  noticeDefeat2: 0
+  hp: 22500
+  mp: 40
+  sp: 20
+  hpRecovery: 0.3
+  mpRecovery: 0.3
+  spRecovery: 0.5
+  level: 125
+  defense: 149
+  avoidRate: 31
+  hitRate: 25
+  viewRange: 80
+  genTime: 0
+  bonusExp: 920
+  bonusCp: 31
+  skinFile: {fileID: 11400000, guid: 9bb9346728b1ae44296e5fb701b4d9d1, type: 2}
+  talkFilePath:
+  crowSale: []
+  shopFileName:
+  npcShop: {fileID: 0}
+  exchangeFileName:
+  npcItemExchange: {fileID: 0}
+  bodyRadius: 4
+  walkSpeed: 14
+  run: 1
+  runSpeed: 25
+  autoDropout: 0
+  dropoutTime: 0
+  afterDeathNobody: 0
+  genItemFileName: bloodmarybundles.genitem
+  qGenItemFileName: q_Lv114.genitem
+  moneyValue: 1155
+  moneyRate: 40
+  moneyLuckRate: 8
+  moneyLuckMaxNum: 1
+  crowAttack:
+  - isUse: 1
+    rangeType: 1
+    attackRange: 60
+    damage:
+      _min: 29
+      _max: 47
+    delay: 1.4
+    spUsage: 1
+    _animationInfo:
+      mainType: 0
+      subType: 0
+      animationName: Attack01
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 3360
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: e0060000
+    skillId:
+      mainId: 65535
+      subId: 65535
+    skillTarget: 0
+  - isUse: 1
+    rangeType: 0
+    attackRange: 6
+    damage:
+      _min: 34
+      _max: 45
+    delay: 0.6
+    spUsage: 0
+    _animationInfo:
+      mainType: 0
+      subType: 0
+      animationName: Attack02
+      isLooping: 0
+      animStartTime: 0
+      animEndTime: 3360
+      animUnitTime: 160
+      animDivNum: 1
+      animDivFrame: 20080000
+    skillId:
+      mainId: 65535
+      subId: 65535
+    skillTarget: 0
+  crowPattern:
+  - dnRate: 90
+    actPattern: 1
+    attackSet: 10
+  skill:
+    mainId: 65535
+    subId: 65535
+  skillLevel: 0
+  skillTarget: 0
+  resistance:
+    Electric: 20
+    Fire: 0
+    Ice: 20
+    Poison: 40
+    Wind: 20
+  reviveGate: -1
+  nameplateHeightOffset: 0
