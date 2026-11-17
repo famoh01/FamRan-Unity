@@ -43,6 +43,26 @@ jobs:
       - name: Show disk
         run: df -h /
 
+      # Restore unmodified textures from the exact user-provided archive.
+      - name: Restore original textures from RAR
+        run: |
+          set -euo pipefail
+          curl -fL --retry 3 -o /tmp/famran-original.rar 'https://drive.usercontent.google.com/download?id=1Fmvgw7hW7utqxdnJA2f0XU8vTNSN0SUv&export=download&confirm=t'
+          echo 'cd8ab2ce5b0de32d52d4bc07ad7244fe8911ee7b1c0abc046eec5410d5fa3354  /tmp/famran-original.rar' | sha256sum -c -
+          chmod +x ci-tools/unrar
+          ci-tools/unrar e -o+ -idq /tmp/famran-original.rar \
+            'RanMobileCampusWars/Assets/Texture2D/innerzone_01.png' \
+            'RanMobileCampusWars/Assets/Texture2D/mp-campus.png' \
+            'RanMobileCampusWars/Assets/Texture2D/mp_hole.png' \
+            'RanMobileCampusWars/Assets/Texture2D/phnx_hole.png' \
+            'RanMobileCampusWars/Assets/Texture2D/sg_campus.png' \
+            'RanMobileCampusWars/Assets/Texture2D/SG_hole.png' \
+            'RanMobileCampusWars/Assets/Texture2D/w_4school_inner01.png' \
+            'RanMobileCampusWars/Assets/Texture2D/w_4school_inner02.png' \
+            'RanMobileCampusWars/Assets/Texture2D/w_city_c_01.png' Assets/Texture2D/
+          rm -f /tmp/famran-original.rar
+          df -h /
+
       - name: Cache Library
         uses: actions/cache@v4
         with:
@@ -76,6 +96,7 @@ jobs:
         with:
           cliVersion: v0.1.76
           versioning: None
+          allowDirtyBuild: true
           targetPlatform: Android
           androidExportType: ${{ inputs.build_app_bundle == 'true' && 'androidAppBundle' || 'androidPackage' }}
           androidTargetSdkVersion: 34
