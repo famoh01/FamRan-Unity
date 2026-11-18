@@ -81,6 +81,7 @@ public class RegistrationManager : MonoBehaviour
 		{
 			apiBaseUrl = auth.apiBaseUrl.TrimEnd('/');
 		}
+		apiBaseUrl = FamHawaiiEndpoint.ApiBaseUrl(apiBaseUrl);
 	}
 
 	/// <summary>Swap the login panel for the register panel.</summary>

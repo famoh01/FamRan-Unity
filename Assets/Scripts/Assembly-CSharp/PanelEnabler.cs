@@ -116,15 +116,14 @@ public class PanelEnabler : MonoBehaviour
 
 	private void ResolveApiBaseUrl()
 	{
-		if (!string.IsNullOrEmpty(apiBaseUrl))
+		if (string.IsNullOrEmpty(apiBaseUrl))
 		{
-			apiBaseUrl = apiBaseUrl.TrimEnd('/');
-			return;
+			var auth = FindObjectOfType<RANMobile.Authentication.Authentication>();
+			apiBaseUrl = auth != null && !string.IsNullOrEmpty(auth.apiBaseUrl)
+				? auth.apiBaseUrl.TrimEnd('/')
+				: "http://127.0.0.1:8085";
 		}
-		var auth = FindObjectOfType<RANMobile.Authentication.Authentication>();
-		apiBaseUrl = auth != null && !string.IsNullOrEmpty(auth.apiBaseUrl)
-			? auth.apiBaseUrl.TrimEnd('/')
-			: "http://127.0.0.1:8085";
+		apiBaseUrl = FamHawaiiEndpoint.ApiBaseUrl(apiBaseUrl);
 	}
 
 	public void Awake()

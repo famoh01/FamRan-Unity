@@ -135,8 +135,15 @@ namespace RANMobile.Authentication
 
 		private void ConnectTcp(string handoff)
 		{
-			string host = "127.0.0.1";
-			int port = 7777;
+			string host = FamHawaiiEndpoint.GameHost;
+			int port = FamHawaiiEndpoint.GamePort;
+			if (string.IsNullOrEmpty(host) || port == 0)
+			{
+				_connecting = false;
+				Debug.LogError("[CharacterLoginManager] invalid game endpoint");
+				ShowDisconnectedDialog();
+				return;
+			}
 			Debug.Log("[CharacterLoginManager] connecting to " + host + ":" + port + " as " + selectedCharacterName + " (" + selectedCharacterID + ")");
 			WorldNet.Clear();
 			WorldRuntime.Clear();

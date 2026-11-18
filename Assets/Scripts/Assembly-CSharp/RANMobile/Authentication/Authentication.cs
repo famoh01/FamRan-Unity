@@ -50,6 +50,7 @@ namespace RANMobile.Authentication
 
 		private void Awake()
 		{
+			apiBaseUrl = FamHawaiiEndpoint.ApiBaseUrl(apiBaseUrl);
 			loginManager = GetComponent<LoginManager>();
 			characterCreationManager = GetComponent<CharacterCreateManager>();
 			characterDeleteManager = GetComponent<CharacterDeleteManager>();

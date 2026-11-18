@@ -254,6 +254,7 @@ namespace TrinityRift.UI.ServerSelect
 			{
 				_apiBaseUrl = auth.apiBaseUrl.TrimEnd('/');
 			}
+			_apiBaseUrl = FamHawaiiEndpoint.ApiBaseUrl(_apiBaseUrl);
 			_channelsPanelToggle.Set(false);
 			_channelParentToggle.Set(false);
 			SetConnectInteractable(false);
