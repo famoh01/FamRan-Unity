@@ -104,7 +104,16 @@ jobs:
           manualExit: true
           customParameters: >
             -nographics
-            -logFile -
+            -logFile /github/workspace/unity-editor.log
+
+      - name: Upload Unity diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unity-editor-diagnostics
+          path: unity-editor.log
+          if-no-files-found: warn
+          retention-days: 7
 
       - name: Locate APK
         if: always()
