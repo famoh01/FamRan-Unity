@@ -63,6 +63,9 @@ jobs:
           rm -f /tmp/famran-original.rar
           df -h /
 
+      - name: Fix exported managed library headers for IL2CPP
+        run: python3 ci-tools/fix-managed-pe.py
+
       - name: Cache Library
         uses: actions/cache@v4
         with:
