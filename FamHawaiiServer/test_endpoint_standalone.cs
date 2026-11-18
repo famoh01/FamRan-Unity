@@ -25,6 +25,8 @@ class Test
     {
         SetConfig("", "", 7777);
         Require(FamHawaiiEndpoint.ApiBaseUrl("http://127.0.0.1:8085/") == "http://127.0.0.1:8085", "local fallback");
+        Require(FamHawaiiEndpoint.ApiBaseUrl("http://remote.example.test") == "", "reject insecure scene fallback");
+        Require(FamHawaiiEndpoint.ApiBaseUrl(null) == "", "reject missing scene fallback");
         Require(FamHawaiiEndpoint.GameHost == "127.0.0.1" && FamHawaiiEndpoint.GamePort == 7777, "local game endpoint");
         SetConfig("https://game.example.test/api/", "game.example.test", 7777);
         Require(FamHawaiiEndpoint.ApiBaseUrl("unused") == "https://game.example.test/api", "HTTPS url");

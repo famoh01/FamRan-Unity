@@ -36,8 +36,15 @@ public static class FamHawaiiEndpoint
 
     public static string ApiBaseUrl(string localFallback)
     {
-        string configured = Config.apiBaseUrl;
-        if (string.IsNullOrWhiteSpace(configured)) return localFallback.TrimEnd('/');
+        // Serialized Unity scene values are untrusted configuration too: apply
+        // the same HTTPS/loopback policy even when the JSON override is empty.
+        string configured = string.IsNullOrWhiteSpace(Config.apiBaseUrl)
+            ? localFallback : Config.apiBaseUrl;
+        if (string.IsNullOrWhiteSpace(configured))
+        {
+            Debug.LogError("FamHawaii API URL is missing; refusing connection.");
+            return "";
+        }
         Uri uri;
         if (!Uri.TryCreate(configured.Trim(), UriKind.Absolute, out uri) ||
             !string.IsNullOrEmpty(uri.UserInfo) || !string.IsNullOrEmpty(uri.Query) ||
