@@ -33,8 +33,11 @@ public static class BuildKlassx
             PlayerSettings.SetScriptingBackend(NamedBuildTarget.Android, ScriptingImplementation.IL2CPP);
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
 
-            // Decompiled/reflection-heavy game code must not be stripped.
-            PlayerSettings.SetManagedStrippingLevel(NamedBuildTarget.Android, ManagedStrippingLevel.Disabled);
+            // IL2CPP cannot link the unused Windows-only interop stub in the
+            // original Library.Shared.dll when every method is preserved.
+            // Low stripping may remove that unused stub; runtime behavior still
+            // needs testing on Android, especially reflection-based code.
+            PlayerSettings.SetManagedStrippingLevel(NamedBuildTarget.Android, ManagedStrippingLevel.Low);
 
             // The client talks to http://127.0.0.1:8085 -- allow cleartext on API 28+.
             PlayerSettings.insecureHttpOption = UnityEditor.InsecureHttpOption.AlwaysAllowed;
