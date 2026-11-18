@@ -141,7 +141,9 @@ jobs:
       # A Release asset is directly downloadable from a phone browser without
       # logging in to GitHub, unlike Actions artifacts.
       - name: Publish APK to Release
-        if: success()
+        # Never publish an untested build automatically. Promote manually only
+        # after client/server, device, localization and signing verification.
+        if: ${{ false }}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: apk-latest

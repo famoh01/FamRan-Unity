@@ -19,7 +19,9 @@ public static class BuildKlassx
     // Separate id from the original com.klab.klassxonline so BOTH apps can be
     // installed side by side for gameplay comparison.
     private const string ApplicationId = "com.klab.klassx.selfhost";
-    private const string OutputPath = "Build/KlassXLocal.apk";
+    // GameCI checks this output directory after Unity exits. Keep the custom
+    // build output there so its validation sees the actual APK.
+    private const string OutputPath = "build/Android/Android.apk";
 
     public static void Build()
     {
