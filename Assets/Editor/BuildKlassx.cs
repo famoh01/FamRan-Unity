@@ -92,8 +92,15 @@ public static class BuildKlassx
             Debug.Log($"[KlassxBuild] result={sum.result} errors={sum.totalErrors} " +
                       $"time={sum.totalTime} size={sum.totalSize}");
 
-            EditorApplication.Exit(
-                sum.result == BuildResult.Succeeded && sum.totalErrors == 0 ? 0 : 1);
+            bool succeeded = sum.result == BuildResult.Succeeded && sum.totalErrors == 0 &&
+                System.IO.File.Exists(OutputPath) && new System.IO.FileInfo(OutputPath).Length > 0;
+            // GameCI's validator requires this exact marker when a custom build
+            // method is used. Emit it only after Unity and file checks succeed.
+            if (succeeded)
+                Debug.Log("Build succeeded!");
+            else
+                Debug.LogError("[KlassxBuild] Build report or output validation failed.");
+            EditorApplication.Exit(succeeded ? 0 : 1);
         }
         catch (Exception e)
         {
