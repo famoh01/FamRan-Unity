@@ -77,7 +77,11 @@ namespace RANMobile.Authentication
 			string baseurl = Authentication.BaseUrl;
 			if (string.IsNullOrEmpty(baseurl))
 			{
-				baseurl = "http://127.0.0.1:8080";
+				// Never send a session token to an unrelated fallback endpoint.
+				_connecting = false;
+				Debug.LogError("[CharacterLoginManager] API endpoint is missing; refusing handoff.");
+				ShowDisconnectedDialog();
+				yield break;
 			}
 			using (var req = new UnityWebRequest(baseurl.TrimEnd('/') + "/api/auth/token", "POST"))
 			{
