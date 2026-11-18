@@ -186,6 +186,17 @@ namespace TrinityRift.UI.ServerSelect
 
 		private ClientServerAddress[] _servers;
 
+		// Display names from the server list are not restricted to ServerEnum.
+		// Keep the enum for existing game logic, but show the server's real name.
+		private readonly Dictionary<byte, string> _serverDisplayNames = new Dictionary<byte, string>();
+
+		private string ServerDisplayName(ClientServerAddress server)
+		{
+			string name;
+			return _serverDisplayNames.TryGetValue(server.groupId, out name) && !string.IsNullOrEmpty(name)
+				? name : server.serverName.ToString();
+		}
+
 		private ClientServerChannel[] _channels;
 
 		private int _selectedServer = -1;
@@ -369,7 +380,7 @@ namespace TrinityRift.UI.ServerSelect
 			_selectedServerPort = srv.agentPort;
 			if (selectedServerLabel != null)
 			{
-				selectedServerLabel.text = srv.serverName.ToString();
+				selectedServerLabel.text = ServerDisplayName(srv);
 			}
 			SetServerListX(serverListShiftedX);
 			if (srv.channels != null && srv.channels.Length > 0)
@@ -420,7 +431,7 @@ namespace TrinityRift.UI.ServerSelect
 					_serverRows.Add(row);
 				}
 				ClientServerAddress s = servers[i];
-				row.Bind(i, s.serverName.ToString(), s.totalPlayers);
+				row.Bind(i, ServerDisplayName(s), s.totalPlayers);
 				WireRowClick(row, i);
 			}
 			if (serverScroll != null)
@@ -754,7 +765,7 @@ namespace TrinityRift.UI.ServerSelect
 				yield return req.SendWebRequest();
 				if (req.result != UnityWebRequest.Result.Success)
 				{
-					ShowResponseMessage("Could not reach the server list.");
+					ShowResponseMessage("ไม่สามารถเชื่อมต่อเพื่อโหลดรายชื่อเซิร์ฟเวอร์ได้");
 					yield break;
 				}
 				ServerListDto dto = null;
@@ -768,13 +779,15 @@ namespace TrinityRift.UI.ServerSelect
 				}
 				if (dto == null || dto.servers == null)
 				{
-					ShowResponseMessage("Empty server list.");
+					ShowResponseMessage("ไม่พบรายชื่อเซิร์ฟเวอร์");
 					yield break;
 				}
 				ClientServerAddress[] mapped = new ClientServerAddress[dto.servers.Length];
+				_serverDisplayNames.Clear();
 				for (int i = 0; i < dto.servers.Length; i++)
 				{
 					ServerDto s = dto.servers[i];
+					_serverDisplayNames[(byte)s.id] = s.name;
 					mapped[i] = new ClientServerAddress
 					{
 						serverName = ParseServerName(s.name),
@@ -797,7 +810,7 @@ namespace TrinityRift.UI.ServerSelect
 				yield return req.SendWebRequest();
 				if (req.result != UnityWebRequest.Result.Success)
 				{
-					ShowResponseMessage("Could not load channels.");
+					ShowResponseMessage("ไม่สามารถโหลดรายชื่อแชนเนลได้");
 					yield break;
 				}
 				ChannelListDto dto = null;
@@ -811,7 +824,7 @@ namespace TrinityRift.UI.ServerSelect
 				}
 				if (dto == null || dto.channels == null)
 				{
-					ShowResponseMessage("No channels available.");
+					ShowResponseMessage("ไม่มีแชนเนลที่พร้อมใช้งาน");
 					yield break;
 				}
 				ClientServerChannel[] mapped = new ClientServerChannel[dto.channels.Length];
