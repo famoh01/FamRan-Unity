@@ -16,3 +16,6 @@
 *.aar binary
 *.bundle binary
 *.cubemap binary
+# Unity NavMeshData assets are binary even though their extension is .asset.
+# Never normalize line endings; CRLF sequences can occur in binary payloads.
+Assets/NavMeshData/*.asset binary
